@@ -41,7 +41,7 @@ class MovieDetailsView: UIViewController {
         
         let playButton = Create.button("play") {_ in
             
-            self.player.play("https://player.odycdn.com/api/v4/streams/free/PodereMercado(Pref%C3%A1cio)/6437c6a6d94890367216dc759123b2762cd800a5/d11779", videoContent: self.view)
+            self.player.play("https://player.odycdn.com/api/v4/streams/free/Berserk13/51911083d759ab4a8b20bd6813400b6df14cabd7/ff1053", videoContent: self.view)
         }
         
         title = "\(type(of: self))"
