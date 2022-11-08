@@ -9,11 +9,9 @@ import Foundation
 
 struct Network {
         
-    static func call(from url: String?, withKey: Bool = true) async -> Data? {
+    static func call(from url: String?) async -> Data? {
 
-        guard var url = url else {print("ERROR: Wrong url"); return nil}
-        if withKey {url += "f1a110d5"}
-        guard let url = URL(string: url) else {print("ERROR: Wrong url"); return nil}
+        guard let url = URL(string: url ?? "") else {print("ERROR: Wrong url"); return nil}
 
         do {
 

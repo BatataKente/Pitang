@@ -7,7 +7,9 @@
 
 import UIKit
 
-class Movies: UIViewController {
+class MoviesView: UIViewController {
+    
+    private var movies: [Movie]? = nil
     
     private let table: (view: UITableView, cellReuseIdentifier: String) = {
         
@@ -33,19 +35,27 @@ class Movies: UIViewController {
         table.view.delegate = self
         
         table.view.constraint([.top, .leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
+        
+        Task {[weak self] in
+             
+            guard let data = await Network.call(from: "https://desafio-mobile-pitang.herokuapp.com/movies/list?page=0&size=3") else {return}
+            
+            self?.movies = Network.decode([Movie].self, from: data)
+            self?.table.view.reloadData()
+        }
     }
 }
 
-extension Movies: UITableViewDelegate, UITableViewDataSource {
+extension MoviesView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        navigationController?.pushViewController(Details(), animated: true)
+        navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row]), animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 100
+        return movies?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,10 +63,7 @@ extension Movies: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath)
         cell.backgroundColor = .white
         
-        let movieImageView = Create.imageView()
-        movieImageView.backgroundColor = .lightGray
-        
-        let label = Create.label("Titulo Filme")
+        let label = Create.label(movies?[indexPath.row].name)
         
         let arrowImageView = Create.imageView(Assets.Images.right)
         arrowImageView.tintColor = .black
@@ -64,13 +71,24 @@ extension Movies: UITableViewDelegate, UITableViewDataSource {
         let line = UIView()
         line.backgroundColor = .lightGray
         
-        cell.addSubviews([movieImageView, label, arrowImageView, line])
+        cell.addSubviews([label, arrowImageView, line])
         
-        movieImageView.constraint(attributes_constants: [.leading: 20, .top: 10, .bottom: -10])
-        movieImageView.constraint(attributes_attributes: [.width: .height], to: movieImageView)
+        Task {
+            
+            let data = await Network.call(from: movies?[indexPath.row].url ?? "")
+            
+            if let data = data {
+                
+                let movieImageView = UIImageView(image: UIImage(data: data))
+                
+                cell.addSubview(movieImageView)
+                
+                movieImageView.constraint(attributes_constants: [.leading: 20, .top: 10, .bottom: -10])
+                movieImageView.constraint(attributes_attributes: [.width: .height], to: movieImageView)
+            }
+        }
         
-        label.constraint([.centerY])
-        label.constraint(attributes_attributes: [.leading: .trailing], to: movieImageView, by: 20)
+        label.constraint(attributes_constants: [.centerY: 0, .leading: cell.frame.height*1.2])
         
         arrowImageView.constraint(attributes_constants: [.centerY: 0, .trailing: -20])
         arrowImageView.shape(size: cell.frame.height*0.3)
