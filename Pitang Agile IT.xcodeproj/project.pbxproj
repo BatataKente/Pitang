@@ -19,6 +19,7 @@
 		1D539F40291A9DFF00C85888 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */; };
 		1D539F45291AA40600C85888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movie.swift */; };
 		1D539F49291AC3D500C85888 /* MoviesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F48291AC3D500C85888 /* MoviesViewCell.swift */; };
+		1D539F4D291AD88800C85888 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F4C291AD88800C85888 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		1D539F44291AA40600C85888 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1D539F48291AC3D500C85888 /* MoviesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewCell.swift; sourceTree = "<group>"; };
+		1D539F4C291AD88800C85888 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				1D539F35291A8F3E00C85888 /* NetWork */,
 				1D539F27291A8E7600C85888 /* Assets.xcassets */,
 				1D539F3D291A9B9500C85888 /* Assets.swift */,
+				1D539F4C291AD88800C85888 /* Player.swift */,
 				1D539F36291A8F5C00C85888 /* Create.swift */,
 			);
 			path = AppUtils;
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D539F4D291AD88800C85888 /* Player.swift in Sources */,
 				1D539F23291A8E7400C85888 /* MoviesView.swift in Sources */,
 				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,

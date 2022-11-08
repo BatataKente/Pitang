@@ -9,6 +9,8 @@ import UIKit
 
 class MovieDetailsView: UIViewController {
     
+    private let player = Player()
+    
     private var movie: Movie?
     
     private let movieTitleLabel: UILabel
@@ -31,17 +33,21 @@ class MovieDetailsView: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private let movieDescriptionLabel = Create.label("aaaaaaaaaaa", color: .white,
-                                                     font: Assets.font(15))
+    private let movieDescriptionLabel = Create.label(color: .white, font: Assets.font(15))
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        let playButton = Create.button("play") {_ in
+            
+            self.player.play("https://player.odycdn.com/api/v4/streams/free/PodereMercado(Pref%C3%A1cio)/6437c6a6d94890367216dc759123b2762cd800a5/d11779", videoContent: self.view)
+        }
+        
         title = "\(type(of: self))"
         
         view.backgroundColor = .systemIndigo
-        view.addSubviews([movieTitleLabel, movieImageView, movieDescriptionLabel])
+        view.addSubviews([movieTitleLabel, movieImageView, movieDescriptionLabel, playButton])
         
         movieTitleLabel.constraint(attributes_constants: [.top: 10, .leading: 0, .trailing: 0], to: view.safeAreaLayoutGuide)
         
@@ -51,6 +57,8 @@ class MovieDetailsView: UIViewController {
         
         movieDescriptionLabel.constraint(attributes_attributes: [.top: .bottom], to: movieImageView, by: view.frame.height*0.05)
         movieDescriptionLabel.constraint(attributes_constants: [.leading: 40, .trailing: -40], to: view.safeAreaLayoutGuide)
+        
+        playButton.constraint([.centerX, .bottom], to: view.safeAreaLayoutGuide)
         
         Task {
             
