@@ -9,6 +9,8 @@ import UIKit
 
 class MoviesView: UIViewController {
     
+    private let moviesViewModel = MoviesViewModel()
+    
     private var movies: [Movie]? = nil
     
     private let table: (view: UITableView, cellReuseIdentifier: String) = {
@@ -50,17 +52,9 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard let subviews = tableView.cellForRow(at: indexPath)?.contentView.subviews else {return}
-        for subview in subviews {
-            
-            if let imageView = subview as? UIImageView {
-                
-                if imageView.image != Assets.Images.right {
-                    
-                    navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row], movieImage: imageView.image), animated: true)
-                }
-            }
-        }
+        tableView.isUserInteractionEnabled = false
+        navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row]), animated: true)
+        tableView.isUserInteractionEnabled = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,41 +67,7 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath)
         cell.contentView.backgroundColor = .white
         
-        let label = Create.label(movies?[indexPath.row].name)
-        label.backgroundColor = .white
-        
-        let arrowImageView = Create.imageView(Assets.Images.right)
-        arrowImageView.tintColor = .black
-        
-        let line = UIView()
-        line.backgroundColor = .lightGray
-        
-        cell.contentView.addSubviews([label, arrowImageView, line])
-        
-        Task {
-            
-            let data = await Network.call(from: movies?[indexPath.row].url ?? "")
-            
-            if let data = data {
-                
-                let movieImageView = UIImageView(image: UIImage(data: data))
-                
-                cell.contentView.addSubview(movieImageView)
-                
-                movieImageView.constraint(attributes_constants: [.leading: 20, .top: 10, .bottom: -10])
-                movieImageView.constraint(attributes_attributes: [.width: .height], to: movieImageView)
-            }
-        }
-        
-        label.constraint(attributes_constants: [.top: 0, .bottom: 0,
-                                                .leading: cell.contentView.frame.height*1.2,
-                                                .trailing: -cell.contentView.frame.height*1.2])
-        
-        arrowImageView.constraint(attributes_constants: [.centerY: 0, .trailing: -20])
-        arrowImageView.shape(size: cell.frame.height*0.3)
-        
-        line.constraint(attributes_constants: [.leading: 10, .trailing: -10, .bottom: 0])
-        line.shape(height: 2)
+        moviesViewModel.setup(cell: cell, movie: movies?[indexPath.row])
         
         return cell
     }
