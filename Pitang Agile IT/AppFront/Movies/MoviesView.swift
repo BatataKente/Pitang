@@ -50,7 +50,10 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row]), animated: true)
+        if let imageView = tableView.cellForRow(at: indexPath)?.contentView.subviews.last as? UIImageView {
+            
+            navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row], movieImage: imageView.image), animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

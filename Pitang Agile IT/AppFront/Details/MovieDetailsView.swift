@@ -13,12 +13,15 @@ class MovieDetailsView: UIViewController {
     
     private let movieTitleLabel: UILabel
     
-    init(_ movie: Movie?) {
+    private let movieImageView: UIImageView
+    
+    init(_ movie: Movie?, movieImage: UIImage?) {
         
         self.movie = movie
         self.movieTitleLabel = Create.label(movie?.name, color: .white,
                                             font: Assets.font(30),
                                             alignment: .center)
+        self.movieImageView = Create.imageView(movieImage)
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -27,8 +30,6 @@ class MovieDetailsView: UIViewController {
         
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private let movieImageView = Create.imageView()
     
     private let movieDescriptionLabel = Create.label("aaaaaaaaaaa", color: .white,
                                                      font: Assets.font(15))
@@ -50,13 +51,6 @@ class MovieDetailsView: UIViewController {
         
         movieDescriptionLabel.constraint(attributes_attributes: [.top: .bottom], to: movieImageView, by: view.frame.height*0.05)
         movieDescriptionLabel.constraint(attributes_constants: [.leading: 40, .trailing: -40], to: view.safeAreaLayoutGuide)
-        
-        Task {
-            
-            guard let data = await Network.call(from: movie?.url) else {return}
-            
-            self.movieImageView.image = UIImage(data: data)
-        }
         
         Task {
             
