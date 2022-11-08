@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
-		1D539F23291A8E7400C85888 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* ViewController.swift */; };
-		1D539F26291A8E7400C85888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D539F24291A8E7400C85888 /* Main.storyboard */; };
+		1D539F23291A8E7400C85888 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* Movies.swift */; };
 		1D539F28291A8E7600C85888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D539F27291A8E7600C85888 /* Assets.xcassets */; };
 		1D539F2B291A8E7600C85888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D539F29291A8E7600C85888 /* LaunchScreen.storyboard */; };
+		1D539F37291A8F5C00C85888 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F36291A8F5C00C85888 /* Create.swift */; };
+		1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F38291A8F7F00C85888 /* NetWork.swift */; };
+		1D539F3C291A904C00C85888 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3B291A904C00C85888 /* UIView.swift */; };
+		1D539F3E291A9B9500C85888 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3D291A9B9500C85888 /* Assets.swift */; };
+		1D539F40291A9DFF00C85888 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3F291A9DFF00C85888 /* MovieDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D539F20291A8E7400C85888 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D539F22291A8E7400C85888 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1D539F25291A8E7400C85888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D539F22291A8E7400C85888 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		1D539F27291A8E7600C85888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D539F2A291A8E7600C85888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D539F2C291A8E7600C85888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D539F36291A8F5C00C85888 /* Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create.swift; sourceTree = "<group>"; };
+		1D539F38291A8F7F00C85888 /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		1D539F3B291A904C00C85888 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		1D539F3D291A9B9500C85888 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		1D539F3F291A9DFF00C85888 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		1D539F1D291A8E7400C85888 /* Pitang Agile IT */ = {
 			isa = PBXGroup;
 			children = (
-				1D539F1E291A8E7400C85888 /* AppDelegate.swift */,
-				1D539F20291A8E7400C85888 /* SceneDelegate.swift */,
-				1D539F22291A8E7400C85888 /* ViewController.swift */,
-				1D539F24291A8E7400C85888 /* Main.storyboard */,
-				1D539F27291A8E7600C85888 /* Assets.xcassets */,
+				1D539F34291A8EB000C85888 /* AppFront */,
+				1D539F33291A8E9D00C85888 /* AppDelegate */,
+				1D539F32291A8E9600C85888 /* AppUtils */,
 				1D539F29291A8E7600C85888 /* LaunchScreen.storyboard */,
 				1D539F2C291A8E7600C85888 /* Info.plist */,
 			);
 			path = "Pitang Agile IT";
+			sourceTree = "<group>";
+		};
+		1D539F32291A8E9600C85888 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1D539F3A291A8FC300C85888 /* Extensions */,
+				1D539F35291A8F3E00C85888 /* NetWork */,
+				1D539F27291A8E7600C85888 /* Assets.xcassets */,
+				1D539F3D291A9B9500C85888 /* Assets.swift */,
+				1D539F36291A8F5C00C85888 /* Create.swift */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		1D539F33291A8E9D00C85888 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D539F1E291A8E7400C85888 /* AppDelegate.swift */,
+				1D539F20291A8E7400C85888 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1D539F34291A8EB000C85888 /* AppFront */ = {
+			isa = PBXGroup;
+			children = (
+				1D539F22291A8E7400C85888 /* Movies.swift */,
+				1D539F3F291A9DFF00C85888 /* MovieDetails.swift */,
+			);
+			path = AppFront;
+			sourceTree = "<group>";
+		};
+		1D539F35291A8F3E00C85888 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				1D539F38291A8F7F00C85888 /* NetWork.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		1D539F3A291A8FC300C85888 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D539F3B291A904C00C85888 /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +179,6 @@
 			files = (
 				1D539F2B291A8E7600C85888 /* LaunchScreen.storyboard in Resources */,
 				1D539F28291A8E7600C85888 /* Assets.xcassets in Resources */,
-				1D539F26291A8E7400C85888 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +189,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D539F23291A8E7400C85888 /* ViewController.swift in Sources */,
+				1D539F23291A8E7400C85888 /* Movies.swift in Sources */,
+				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
+				1D539F40291A9DFF00C85888 /* MovieDetails.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
+				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
+				1D539F3C291A904C00C85888 /* UIView.swift in Sources */,
+				1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D539F24291A8E7400C85888 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D539F25291A8E7400C85888 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D539F29291A8E7600C85888 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +339,7 @@
 				INFOPLIST_FILE = "Pitang Agile IT/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +366,7 @@
 				INFOPLIST_FILE = "Pitang Agile IT/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
