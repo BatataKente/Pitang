@@ -57,5 +57,12 @@ class MovieDetailsView: UIViewController {
             
             self.movieImageView.image = UIImage(data: data)
         }
+        
+        Task {
+            
+            guard let data = await Network.call(from: "https://desafio-mobile-pitang.herokuapp.com/movies/detail/\(movie?._id ?? "")") else {return}
+            
+            self.movieDescriptionLabel.text = Network.decode(MovieDetails.self, from: data)?.description
+        }
     }
 }

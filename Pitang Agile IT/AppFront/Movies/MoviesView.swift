@@ -38,7 +38,7 @@ class MoviesView: UIViewController {
         
         Task {[weak self] in
              
-            guard let data = await Network.call(from: "https://desafio-mobile-pitang.herokuapp.com/movies/list?page=0&size=3") else {return}
+            guard let data = await Network.call(from: "https://desafio-mobile-pitang.herokuapp.com/movies/list?page=0&size=0") else {return}
             
             self?.movies = Network.decode([Movie].self, from: data)
             self?.table.view.reloadData()
@@ -61,9 +61,10 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath)
-        cell.backgroundColor = .white
+        cell.contentView.backgroundColor = .white
         
         let label = Create.label(movies?[indexPath.row].name)
+        label.backgroundColor = .white
         
         let arrowImageView = Create.imageView(Assets.Images.right)
         arrowImageView.tintColor = .black
@@ -71,7 +72,7 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
         let line = UIView()
         line.backgroundColor = .lightGray
         
-        cell.addSubviews([label, arrowImageView, line])
+        cell.contentView.addSubviews([label, arrowImageView, line])
         
         Task {
             
@@ -81,14 +82,16 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
                 
                 let movieImageView = UIImageView(image: UIImage(data: data))
                 
-                cell.addSubview(movieImageView)
+                cell.contentView.addSubview(movieImageView)
                 
                 movieImageView.constraint(attributes_constants: [.leading: 20, .top: 10, .bottom: -10])
                 movieImageView.constraint(attributes_attributes: [.width: .height], to: movieImageView)
             }
         }
         
-        label.constraint(attributes_constants: [.centerY: 0, .leading: cell.frame.height*1.2])
+        label.constraint(attributes_constants: [.top: 0, .bottom: 0,
+                                                .leading: cell.contentView.frame.height*1.2,
+                                                .trailing: -cell.contentView.frame.height*1.2])
         
         arrowImageView.constraint(attributes_constants: [.centerY: 0, .trailing: -20])
         arrowImageView.shape(size: cell.frame.height*0.3)

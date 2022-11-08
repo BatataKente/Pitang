@@ -17,7 +17,7 @@
 		1D539F3C291A904C00C85888 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3B291A904C00C85888 /* UIView.swift */; };
 		1D539F3E291A9B9500C85888 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3D291A9B9500C85888 /* Assets.swift */; };
 		1D539F40291A9DFF00C85888 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */; };
-		1D539F45291AA40600C85888 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movies.swift */; };
+		1D539F45291AA40600C85888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		1D539F3B291A904C00C85888 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1D539F3D291A9B9500C85888 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
-		1D539F44291AA40600C85888 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		1D539F44291AA40600C85888 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		1D539F43291AA3F300C85888 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1D539F44291AA40600C85888 /* Movies.swift */,
+				1D539F44291AA40600C85888 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,7 +221,7 @@
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
 				1D539F40291A9DFF00C85888 /* MovieDetailsView.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
-				1D539F45291AA40600C85888 /* Movies.swift in Sources */,
+				1D539F45291AA40600C85888 /* Movie.swift in Sources */,
 				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
 				1D539F3C291A904C00C85888 /* UIView.swift in Sources */,
 				1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */,
