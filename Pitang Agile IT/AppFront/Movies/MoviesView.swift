@@ -9,8 +9,6 @@ import UIKit
 
 class MoviesView: UIViewController {
     
-    private let moviesViewModel = MoviesViewModel()
-    
     private var movies: [Movie]? = nil
     
     private let table: (view: UITableView, cellReuseIdentifier: String) = {
@@ -18,7 +16,7 @@ class MoviesView: UIViewController {
         let identifier = "Cell"
         
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
+        tableView.register(MoviesViewCell.self, forCellReuseIdentifier: identifier)
         tableView.backgroundColor = .white
         
         return (view: tableView, cellReuseIdentifier: identifier)
@@ -52,8 +50,11 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        guard let cell = tableView.cellForRow(at: indexPath) as? MoviesViewCell else {return}
+        
         tableView.isUserInteractionEnabled = false
-        navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row]), animated: true)
+        navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row],
+                                                                  movieImage: cell.movieImageView.image), animated: true)
         tableView.isUserInteractionEnabled = true
     }
     
@@ -64,10 +65,10 @@ extension MoviesView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath) as? MoviesViewCell else {return UITableViewCell()}
         cell.contentView.backgroundColor = .white
         
-        moviesViewModel.setup(cell: cell, movie: movies?[indexPath.row])
+        cell.setup(movie: movies?[indexPath.row])
         
         return cell
     }
