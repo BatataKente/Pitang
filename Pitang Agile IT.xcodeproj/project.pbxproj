@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
-		1D539F23291A8E7400C85888 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* Movies.swift */; };
+		1D539F23291A8E7400C85888 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* MoviesView.swift */; };
 		1D539F28291A8E7600C85888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D539F27291A8E7600C85888 /* Assets.xcassets */; };
 		1D539F2B291A8E7600C85888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D539F29291A8E7600C85888 /* LaunchScreen.storyboard */; };
 		1D539F37291A8F5C00C85888 /* Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F36291A8F5C00C85888 /* Create.swift */; };
 		1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F38291A8F7F00C85888 /* NetWork.swift */; };
 		1D539F3C291A904C00C85888 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3B291A904C00C85888 /* UIView.swift */; };
 		1D539F3E291A9B9500C85888 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3D291A9B9500C85888 /* Assets.swift */; };
-		1D539F40291A9DFF00C85888 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3F291A9DFF00C85888 /* Details.swift */; };
+		1D539F40291A9DFF00C85888 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */; };
+		1D539F45291AA40600C85888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D539F20291A8E7400C85888 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D539F22291A8E7400C85888 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		1D539F22291A8E7400C85888 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		1D539F27291A8E7600C85888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D539F2A291A8E7600C85888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D539F2C291A8E7600C85888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,7 +32,8 @@
 		1D539F38291A8F7F00C85888 /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
 		1D539F3B291A904C00C85888 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		1D539F3D291A9B9500C85888 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
-		1D539F3F291A9DFF00C85888 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		1D539F44291AA40600C85888 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		1D539F35291A8F3E00C85888 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				1D539F43291AA3F300C85888 /* Models */,
 				1D539F38291A8F7F00C85888 /* NetWork.swift */,
 			);
 			path = NetWork;
@@ -122,7 +125,7 @@
 		1D539F41291AA00700C85888 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				1D539F22291A8E7400C85888 /* Movies.swift */,
+				1D539F22291A8E7400C85888 /* MoviesView.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -130,9 +133,17 @@
 		1D539F42291AA00F00C85888 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				1D539F3F291A9DFF00C85888 /* Details.swift */,
+				1D539F3F291A9DFF00C85888 /* MovieDetailsView.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		1D539F43291AA3F300C85888 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1D539F44291AA40600C85888 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D539F23291A8E7400C85888 /* Movies.swift in Sources */,
+				1D539F23291A8E7400C85888 /* MoviesView.swift in Sources */,
 				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
-				1D539F40291A9DFF00C85888 /* Details.swift in Sources */,
+				1D539F40291A9DFF00C85888 /* MovieDetailsView.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
+				1D539F45291AA40600C85888 /* Movie.swift in Sources */,
 				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
 				1D539F3C291A904C00C85888 /* UIView.swift in Sources */,
 				1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */,
