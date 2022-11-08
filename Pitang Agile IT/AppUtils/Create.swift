@@ -12,6 +12,7 @@ struct Create {
     static func navigationController(rootViewController: UIViewController) -> UINavigationController {
         
         let navigationController = UINavigationController(rootViewController: rootViewController)
+        navigationController.navigationBar.tintColor = .white
         
         let standardAppearance = UINavigationBarAppearance()
 

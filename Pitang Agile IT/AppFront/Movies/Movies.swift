@@ -38,6 +38,11 @@ class Movies: UIViewController {
 
 extension Movies: UITableViewDelegate, UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        navigationController?.pushViewController(Details(), animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 100
@@ -46,7 +51,7 @@ extension Movies: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath)
-        cell.contentView.backgroundColor = .white
+        cell.backgroundColor = .white
         
         let movieImageView = Create.imageView()
         movieImageView.backgroundColor = .lightGray
@@ -59,7 +64,7 @@ extension Movies: UITableViewDelegate, UITableViewDataSource {
         let line = UIView()
         line.backgroundColor = .lightGray
         
-        cell.contentView.addSubviews([movieImageView, label, arrowImageView, line])
+        cell.addSubviews([movieImageView, label, arrowImageView, line])
         
         movieImageView.constraint(attributes_constants: [.leading: 20, .top: 10, .bottom: -10])
         movieImageView.constraint(attributes_attributes: [.width: .height], to: movieImageView)
