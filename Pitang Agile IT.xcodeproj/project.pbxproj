@@ -20,7 +20,9 @@
 		1D539F45291AA40600C85888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movie.swift */; };
 		1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */; };
 		1D539F4D291AD88800C85888 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F4C291AD88800C85888 /* Player.swift */; };
-		1DFC7B66291BD3B100152452 /* CrazyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC7B65291BD3B100152452 /* CrazyViewController.swift */; };
+		1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */; };
+		1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */; };
+		1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC7B65291BD3B100152452 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +41,9 @@
 		1D539F44291AA40600C85888 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		1D539F4C291AD88800C85888 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		1DFC7B65291BD3B100152452 /* CrazyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyViewController.swift; sourceTree = "<group>"; };
+		1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresViewController.swift; sourceTree = "<group>"; };
+		1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresView.swift; sourceTree = "<group>"; };
+		1DFC7B65291BD3B100152452 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +110,9 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
-				1DFC7B64291BD3A200152452 /* Crazy */,
-				1D539F42291AA00F00C85888 /* Details */,
 				1D539F41291AA00700C85888 /* Movies */,
+				1DEA7A49291D820C003D4B98 /* Clousures */,
+				1DFC7B65291BD3B100152452 /* MenuViewController.swift */,
 			);
 			path = AppFront;
 			sourceTree = "<group>";
@@ -133,6 +137,7 @@
 		1D539F41291AA00700C85888 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				1D539F42291AA00F00C85888 /* Details */,
 				1D539F22291A8E7400C85888 /* MoviesViewController.swift */,
 				1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */,
 			);
@@ -155,12 +160,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1DFC7B64291BD3A200152452 /* Crazy */ = {
+		1DEA7A49291D820C003D4B98 /* Clousures */ = {
 			isa = PBXGroup;
 			children = (
-				1DFC7B65291BD3B100152452 /* CrazyViewController.swift */,
+				1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */,
+				1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */,
 			);
-			path = Crazy;
+			path = Clousures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,9 +245,11 @@
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
 				1D539F40291A9DFF00C85888 /* MovieDetailsViewController.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
-				1DFC7B66291BD3B100152452 /* CrazyViewController.swift in Sources */,
+				1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
+				1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */,
 				1D539F45291AA40600C85888 /* Movie.swift in Sources */,
+				1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */,
 				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
 				1D539F3C291A904C00C85888 /* UIView.swift in Sources */,
 				1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */,
