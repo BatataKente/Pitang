@@ -90,22 +90,18 @@ struct Create {
                        font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                        image: UIImage? = nil,
                        handler: @escaping UIActionHandler) -> UIButton {
-        
         let button = UIButton()
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
         button.addAction(UIAction(handler: handler), for: .touchUpInside)
         button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-        
         button.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         button.titleLabel?.font = font
-        
         button.imageView?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         button.imageView?.constraint([.height], to: button.titleLabel,
                                      multiplier: 0.9)
-        button.imageView?.constraint(attributes_attributes: [.width: .height], to: button.imageView,
+        button.imageView?.constraint(attributesAttributes: [.width: .height], to: button.imageView,
                                      multiplier: 0.7)
-        
         return button
     }
 }

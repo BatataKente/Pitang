@@ -50,11 +50,11 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard let cell = tableView.cellForRow(at: indexPath) as? MoviesViewCell else {return}
+        guard let cell = tableView.cellForRow(at: indexPath) as? MoviesTableViewCell else {return}
         
         tableView.isUserInteractionEnabled = false
-        navigationController?.pushViewController(MovieDetailsView(movies?[indexPath.row],
-                                                                  movieImage: cell.movieImageView.image), animated: true)
+        navigationController?.pushViewController(MovieDetailsViewController(movies?[indexPath.row],
+                                                                            movieImage: cell.movieImageView.image), animated: true)
         tableView.isUserInteractionEnabled = true
     }
     
@@ -65,7 +65,7 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath) as? MoviesViewCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath) as? MoviesTableViewCell else {return UITableViewCell()}
         cell.contentView.backgroundColor = .white
         
         cell.setup(movie: movies?[indexPath.row])
