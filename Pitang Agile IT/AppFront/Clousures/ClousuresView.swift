@@ -9,8 +9,21 @@ import SwiftUI
 
 struct ClousuresView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello Crazy World")
+            .font(.system(size: 20, weight: .bold))
+        
+        Button {
+            
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            
+            Text("go Back")
+                .foregroundColor(.white)
+                .padding(10)
+        }
     }
 }
