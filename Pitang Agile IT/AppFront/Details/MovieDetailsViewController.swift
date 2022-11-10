@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieDetailsView: UIViewController {
+class MovieDetailsViewController: UIViewController {
     
     private let player = Player()
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoviesViewCell: UITableViewCell {
+class MoviesTableViewCell: UITableViewCell {
     
     let movieImageView = UIImageView()
     
