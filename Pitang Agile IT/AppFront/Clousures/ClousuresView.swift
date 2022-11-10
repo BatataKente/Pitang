@@ -12,14 +12,18 @@ struct ClousuresView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-    
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text("Hello Crazy World")
             .font(.system(size: 20, weight: .bold))
         
-        Button("go Back") {
+        Button {
             
             presentationMode.wrappedValue.dismiss()
-        }.foregroundColor(.white)
-         .font(.system(size: 20, weight: .bold))
+        } label: {
+            
+            Text("go Back")
+                .foregroundColor(.white)
+                .padding(10)
+        }
     }
 }
