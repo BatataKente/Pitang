@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoviesView: UIViewController {
+class MoviesViewController: UIViewController {
     
     private var movies: [Movie]? = nil
     
@@ -16,7 +16,7 @@ class MoviesView: UIViewController {
         let identifier = "Cell"
         
         let tableView = UITableView()
-        tableView.register(MoviesViewCell.self, forCellReuseIdentifier: identifier)
+        tableView.register(MoviesTableViewCell.self, forCellReuseIdentifier: identifier)
         tableView.backgroundColor = .white
         
         return (view: tableView, cellReuseIdentifier: identifier)
@@ -46,7 +46,7 @@ class MoviesView: UIViewController {
     }
 }
 
-extension MoviesView: UITableViewDelegate, UITableViewDataSource {
+extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
