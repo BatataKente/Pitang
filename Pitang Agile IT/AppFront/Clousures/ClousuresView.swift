@@ -8,19 +8,15 @@
 import SwiftUI
 
 struct ClousuresView: View {
-    
     @Environment(\.presentationMode) var presentationMode
-    
     var body: some View {
-        
-        Text("Hello Crazy World")
-            .font(.system(size: 20, weight: .bold))
-        
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Hello Crazy World")
+                .font(.system(size: 20, weight: .bold))
+        }
         Button {
-            
             presentationMode.wrappedValue.dismiss()
         } label: {
-            
             Text("go Back")
                 .foregroundColor(.white)
                 .padding(10)
