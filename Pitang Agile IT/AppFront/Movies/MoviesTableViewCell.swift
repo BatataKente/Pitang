@@ -21,9 +21,9 @@ class MoviesTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup(movie: Movie?) {
+    func setup(result: Result?) {
         
-        let label = Create.label(movie?.name)
+        let label = Create.label(result?.title)
         label.backgroundColor = .white
         
         let arrowImageView = Create.imageView(Assets.Images.right)
@@ -36,7 +36,7 @@ class MoviesTableViewCell: UITableViewCell {
         
         Task {
             
-            let data = await Network.call(from: movie?.url ?? "")
+            let data = await Network.call(from: "https://image.tmdb.org/t/p/original\(result?.poster_path ?? "")")
             
             if let data = data {
                 
