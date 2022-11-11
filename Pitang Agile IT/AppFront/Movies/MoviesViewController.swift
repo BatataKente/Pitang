@@ -28,7 +28,7 @@ class MoviesViewController: UIViewController {
         
         title = "\(type(of: self))"
         
-        view.backgroundColor = .systemIndigo
+        view.backgroundColor = .systemPurple
         view.addSubview(table.view)
         
         table.view.dataSource = self
@@ -49,8 +49,6 @@ class MoviesViewController: UIViewController {
 extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard let cell = tableView.cellForRow(at: indexPath) as? MoviesTableViewCell else {return}
         
         tableView.isUserInteractionEnabled = false
         navigationController?.pushViewController(MovieDetailsViewController(movies?.results?[indexPath.row]), animated: true)

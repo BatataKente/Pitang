@@ -32,7 +32,7 @@ class MovieDetailsViewController: UIViewController {
                               videoContent: self?.view ?? UIView())
         }
         title = "\(type(of: self))"
-        view.backgroundColor = .systemIndigo
+        view.backgroundColor = .systemPurple
         view.addSubviews([movieImageView, movieTitleLabel, movieDescriptionLabel, playButton])
         movieImageView.constraint([.top,.leading,.trailing])
         movieImageView.shape(height: view.frame.height*0.3)
