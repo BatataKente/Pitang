@@ -9,7 +9,7 @@ import UIKit
 
 class MoviesViewController: UIViewController {
     
-    private var movies: [Movie]? = nil
+    private var movies: Movies? = nil
     
     private let table: (view: UITableView, cellReuseIdentifier: String) = {
         
@@ -28,7 +28,7 @@ class MoviesViewController: UIViewController {
         
         title = "\(type(of: self))"
         
-        view.backgroundColor = .systemIndigo
+        view.backgroundColor = .systemPurple
         view.addSubview(table.view)
         
         table.view.dataSource = self
@@ -38,9 +38,9 @@ class MoviesViewController: UIViewController {
         
         Task {[weak self] in
              
-            guard let data = await Network.call(from: "https://desafio-mobile-pitang.herokuapp.com/movies/list?page=0&size=0") else {return}
+            guard let data = await Network.call(from: "https://api.themoviedb.org/3/movie/popular?api_key=caf1ab0511589bd064968e2fabd2e42b") else {return}
             
-            self?.movies = Network.decode([Movie].self, from: data)
+            self?.movies = Network.decode(Movies.self, from: data)
             self?.table.view.reloadData()
         }
     }
@@ -50,17 +50,14 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard let cell = tableView.cellForRow(at: indexPath) as? MoviesTableViewCell else {return}
-        
         tableView.isUserInteractionEnabled = false
-        navigationController?.pushViewController(MovieDetailsViewController(movies?[indexPath.row],
-                                                                            movieImage: cell.movieImageView.image), animated: true)
+        navigationController?.pushViewController(MovieDetailsViewController(movies?.results?[indexPath.row]), animated: true)
         tableView.isUserInteractionEnabled = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return movies?.count ?? 0
+        return movies?.results?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,7 +65,7 @@ extension MoviesViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: table.cellReuseIdentifier, for: indexPath) as? MoviesTableViewCell else {return UITableViewCell()}
         cell.contentView.backgroundColor = .white
         
-        cell.setup(movie: movies?[indexPath.row])
+        cell.setup(result: movies?.results?[indexPath.row])
         
         return cell
     }
