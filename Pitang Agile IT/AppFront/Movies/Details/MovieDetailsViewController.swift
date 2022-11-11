@@ -27,9 +27,9 @@ class MovieDetailsViewController: UIViewController {
                                                      font: Assets.font(15))
     override func viewDidLoad() {
         super.viewDidLoad()
-        let playButton = Create.button("play") {_ in
-            self.player.play("https://player.odycdn.com/api/v4/streams/free/Berserk13/51911083d759ab4a8b20bd6813400b6df14cabd7/ff1053",
-                             videoContent: self.view)
+        let playButton = Create.button("play") {[weak self] _ in
+            self?.player.play("https://player.odycdn.com/api/v4/streams/free/Berserk13/51911083d759ab4a8b20bd6813400b6df14cabd7/ff1053",
+                              videoContent: self?.view ?? UIView())
         }
         title = "\(type(of: self))"
         view.backgroundColor = .systemIndigo
