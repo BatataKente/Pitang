@@ -44,11 +44,11 @@ class MovieDetailsViewController: UIViewController {
         movieDescriptionLabel.constraint(attributesConstants: [.leading: 40, .trailing: -40],
                                          to: view.safeAreaLayoutGuide)
         playButton.constraint([.centerX, .bottom], to: view.safeAreaLayoutGuide)
-        Task {
-            
-            guard let data = await Network.call(from: "https://image.tmdb.org/t/p/original\(result?.backdrop_path ?? "")") else {return}
-        
-            self.movieImageView.image = UIImage(data: data)
-        }
+//        Task {
+//
+//            guard let data = await Network.call(from: "https://image.tmdb.org/t/p/original\(result?.backdrop_path ?? "")") else {return}
+//
+//            self.movieImageView.image = UIImage(data: data)
+//        }
     }
 }
