@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D32C5352926921000E4CBA6 /* Jason.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D32C5342926921000E4CBA6 /* Jason.json */; };
+		1D3F073D29267FE7000DC62E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F073C29267FE7000DC62E /* Book.swift */; };
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
 		1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* MoviesViewController.swift */; };
@@ -20,12 +22,20 @@
 		1D539F45291AA40600C85888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movie.swift */; };
 		1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */; };
 		1D539F4D291AD88800C85888 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F4C291AD88800C85888 /* Player.swift */; };
+		1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */; };
+		1D875F542926AC7B00169B84 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F532926AC7B00169B84 /* BookViewController.swift */; };
+		1D875F562926B0F700169B84 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F552926B0F700169B84 /* TestViewController.swift */; };
+		1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACDD672926561A00E283EF /* ReadViewController.swift */; };
+		1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */; };
 		1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */; };
 		1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */; };
 		1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC7B65291BD3B100152452 /* MenuViewController.swift */; };
+		1DFC9AA7291FCF29007F4E2F /* AudioBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC9AA6291FCF29007F4E2F /* AudioBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D32C5342926921000E4CBA6 /* Jason.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Jason.json; path = ../../../.Trash/Jason.json; sourceTree = "<group>"; };
+		1D3F073C29267FE7000DC62E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D539F20291A8E7400C85888 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +51,15 @@
 		1D539F44291AA40600C85888 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		1D539F4C291AD88800C85888 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		1D875F532926AC7B00169B84 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		1D875F552926B0F700169B84 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		1DACDD672926561A00E283EF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedViewController.swift; sourceTree = "<group>"; };
 		1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresViewController.swift; sourceTree = "<group>"; };
 		1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresView.swift; sourceTree = "<group>"; };
 		1DFC7B65291BD3B100152452 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		1DFC9AA6291FCF29007F4E2F /* AudioBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 		1D539F1D291A8E7400C85888 /* Pitang Agile IT */ = {
 			isa = PBXGroup;
 			children = (
+				1D32C5342926921000E4CBA6 /* Jason.json */,
 				1D539F34291A8EB000C85888 /* AppFront */,
 				1D539F33291A8E9D00C85888 /* AppDelegate */,
 				1D539F32291A8E9600C85888 /* AppUtils */,
@@ -110,6 +127,10 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
+				1D875F522926AC6600169B84 /* Book */,
+				1DACDD662926560800E283EF /* Read */,
+				1DC67FBD2925455100F3D714 /* Computed */,
+				1DFC9AA5291FCF0E007F4E2F /* AudioBook */,
 				1D539F41291AA00700C85888 /* Movies */,
 				1DEA7A49291D820C003D4B98 /* Clousures */,
 				1DFC7B65291BD3B100152452 /* MenuViewController.swift */,
@@ -130,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1D539F3B291A904C00C85888 /* UIView.swift */,
+				1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -156,8 +178,34 @@
 			isa = PBXGroup;
 			children = (
 				1D539F44291AA40600C85888 /* Movie.swift */,
+				1D3F073C29267FE7000DC62E /* Book.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1D875F522926AC6600169B84 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				1D875F532926AC7B00169B84 /* BookViewController.swift */,
+				1D875F552926B0F700169B84 /* TestViewController.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		1DACDD662926560800E283EF /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				1DACDD672926561A00E283EF /* ReadViewController.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		1DC67FBD2925455100F3D714 /* Computed */ = {
+			isa = PBXGroup;
+			children = (
+				1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */,
+			);
+			path = Computed;
 			sourceTree = "<group>";
 		};
 		1DEA7A49291D820C003D4B98 /* Clousures */ = {
@@ -167,6 +215,14 @@
 				1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */,
 			);
 			path = Clousures;
+			sourceTree = "<group>";
+		};
+		1DFC9AA5291FCF0E007F4E2F /* AudioBook */ = {
+			isa = PBXGroup;
+			children = (
+				1DFC9AA6291FCF29007F4E2F /* AudioBookViewController.swift */,
+			);
+			path = AudioBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D539F2B291A8E7600C85888 /* LaunchScreen.storyboard in Resources */,
+				1D32C5352926921000E4CBA6 /* Jason.json in Resources */,
 				1D539F28291A8E7600C85888 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,13 +324,20 @@
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
 				1D539F40291A9DFF00C85888 /* MovieDetailsViewController.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
+				1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */,
 				1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */,
+				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
+				1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
+				1D875F562926B0F700169B84 /* TestViewController.swift in Sources */,
 				1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */,
 				1D539F45291AA40600C85888 /* Movie.swift in Sources */,
 				1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */,
+				1DFC9AA7291FCF29007F4E2F /* AudioBookViewController.swift in Sources */,
+				1D3F073D29267FE7000DC62E /* Book.swift in Sources */,
 				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
 				1D539F3C291A904C00C85888 /* UIView.swift in Sources */,
+				1D875F542926AC7B00169B84 /* BookViewController.swift in Sources */,
 				1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

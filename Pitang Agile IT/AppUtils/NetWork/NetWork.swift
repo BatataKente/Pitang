@@ -31,4 +31,18 @@ struct Network {
         }
         catch {print("ERROR: \(error)"); return nil}
     }
+    
+    static func read<T:Codable>(_ what: T.Type, from name: String, type: String = "json") -> T? {
+        
+        guard let url = Bundle.main.url(forResource: name, withExtension: type) else {
+            print("bad url"); return nil
+        }
+        guard let data = try? Data(contentsOf: url) else {
+            print("bad data"); return nil
+        }
+        guard let books = try? JSONDecoder().decode(T.self, from: data) else {
+            print("bad books"); return nil
+        }
+        return books
+    }
 }

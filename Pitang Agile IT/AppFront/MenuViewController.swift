@@ -12,6 +12,11 @@ final class MenuViewController: UIViewController {
     
     private let viewControllers = [MoviesViewController(),
                                    ClousuresViewController(),
+                                   ReadViewController(),
+                                   AudioBookViewController(),
+                                   BookViewController(),
+                                   ComputedViewController(),
+                                   TextViewController(),
                                    UIHostingController(rootView: ClousuresView())]
     
     private lazy var table: (view: UITableView, cellReuseIdentifier: String) = {
@@ -43,8 +48,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        tableView.isUserInteractionEnabled = false
         navigationController?.pushViewController(viewControllers[indexPath.row], animated: true)
         tableView.cellForRow(at: indexPath)?.isSelected = false
+        tableView.isUserInteractionEnabled = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
