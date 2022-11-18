@@ -14,7 +14,9 @@ final class MenuViewController: UIViewController {
                                    ClousuresViewController(),
                                    ReadViewController(),
                                    AudioBookViewController(),
+                                   BookViewController(),
                                    ComputedViewController(),
+                                   TextViewController(),
                                    UIHostingController(rootView: ClousuresView())]
     
     private lazy var table: (view: UITableView, cellReuseIdentifier: String) = {

@@ -12,7 +12,7 @@ class ReadViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         view.backgroundColor = .yellow
         
-        print(Network.read(Bible.self, from: "Jason") as Any)
+//        print(Network.read(Bible.self, from: "Jason") as Any)
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
