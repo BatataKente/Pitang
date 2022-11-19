@@ -8,13 +8,9 @@
 import Foundation
 
 struct Network {
-        
     static func call(from url: String?) async -> Data? {
-
         guard let url = URL(string: url ?? "") else {print("ERROR: Wrong url"); return nil}
-
         do {
-
             let (data, response) = try await URLSession.shared.data(from: url)
             print("RESPONSE:", response)
 
@@ -22,7 +18,6 @@ struct Network {
         }
         catch {print("ERROR: \(error)"); return nil}
     }
-
     static func decode<T: Codable>(_ what: T.Type, from data: Data) -> T? {
 
         do {
@@ -31,17 +26,15 @@ struct Network {
         }
         catch {print("ERROR: \(error)"); return nil}
     }
-    
-    static func read<T:Codable>(_ what: T.Type, from name: String, type: String = "json") -> T? {
-        
-        guard let url = Bundle.main.url(forResource: name, withExtension: type) else {
-            print("bad url"); return nil
+    static func read<T: Codable>(_ what: T.Type, from file: String, type: String = "geojson") -> T? {
+        guard let url = Bundle.main.url(forResource: file, withExtension: type) else {
+            print("Wrong url"); return nil
         }
         guard let data = try? Data(contentsOf: url) else {
-            print("bad data"); return nil
+            print("Data decoding error"); return nil
         }
         guard let books = try? JSONDecoder().decode(T.self, from: data) else {
-            print("bad books"); return nil
+            print("Json decoding error"); return nil
         }
         return books
     }

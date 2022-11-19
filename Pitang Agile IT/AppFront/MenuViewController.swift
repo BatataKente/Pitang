@@ -15,6 +15,7 @@ final class MenuViewController: UIViewController {
                                    ReadViewController(),
                                    AudioBookViewController(),
                                    BookViewController(),
+                                   AnimatedViewController(),
                                    ComputedViewController(),
                                    TextViewController(),
                                    UIHostingController(rootView: ClousuresView())]

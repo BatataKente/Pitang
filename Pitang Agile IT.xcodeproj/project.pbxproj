@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D32C5352926921000E4CBA6 /* Jason.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D32C5342926921000E4CBA6 /* Jason.json */; };
 		1D3F073D29267FE7000DC62E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F073C29267FE7000DC62E /* Book.swift */; };
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
@@ -25,6 +24,8 @@
 		1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */; };
 		1D875F542926AC7B00169B84 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F532926AC7B00169B84 /* BookViewController.swift */; };
 		1D875F562926B0F700169B84 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F552926B0F700169B84 /* TestViewController.swift */; };
+		1D8C6EC32929806E000BCBE4 /* Jason.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC229297F1C000BCBE4 /* Jason.geojson */; };
+		1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */; };
 		1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACDD672926561A00E283EF /* ReadViewController.swift */; };
 		1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */; };
 		1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */; };
@@ -34,7 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D32C5342926921000E4CBA6 /* Jason.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Jason.json; path = ../../../.Trash/Jason.json; sourceTree = "<group>"; };
 		1D3F073C29267FE7000DC62E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		1D875F532926AC7B00169B84 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		1D875F552926B0F700169B84 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		1D8C6EC229297F1C000BCBE4 /* Jason.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jason.geojson; sourceTree = "<group>"; };
+		1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewController.swift; sourceTree = "<group>"; };
 		1DACDD672926561A00E283EF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedViewController.swift; sourceTree = "<group>"; };
 		1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 		1D539F1D291A8E7400C85888 /* Pitang Agile IT */ = {
 			isa = PBXGroup;
 			children = (
-				1D32C5342926921000E4CBA6 /* Jason.json */,
+				1D8C6EC229297F1C000BCBE4 /* Jason.geojson */,
 				1D539F34291A8EB000C85888 /* AppFront */,
 				1D539F33291A8E9D00C85888 /* AppDelegate */,
 				1D539F32291A8E9600C85888 /* AppUtils */,
@@ -127,6 +129,7 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
+				1D8C6EC4292981A7000BCBE4 /* Animated */,
 				1D875F522926AC6600169B84 /* Book */,
 				1DACDD662926560800E283EF /* Read */,
 				1DC67FBD2925455100F3D714 /* Computed */,
@@ -190,6 +193,14 @@
 				1D875F552926B0F700169B84 /* TestViewController.swift */,
 			);
 			path = Book;
+			sourceTree = "<group>";
+		};
+		1D8C6EC4292981A7000BCBE4 /* Animated */ = {
+			isa = PBXGroup;
+			children = (
+				1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */,
+			);
+			path = Animated;
 			sourceTree = "<group>";
 		};
 		1DACDD662926560800E283EF /* Read */ = {
@@ -284,8 +295,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8C6EC32929806E000BCBE4 /* Jason.geojson in Resources */,
 				1D539F2B291A8E7600C85888 /* LaunchScreen.storyboard in Resources */,
-				1D32C5352926921000E4CBA6 /* Jason.json in Resources */,
 				1D539F28291A8E7600C85888 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +338,7 @@
 				1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */,
 				1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */,
 				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
+				1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */,
 				1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
 				1D875F562926B0F700169B84 /* TestViewController.swift in Sources */,

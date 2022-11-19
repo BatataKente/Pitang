@@ -8,13 +8,13 @@
 import UIKit
 
 class ReadViewController: UIViewController {
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    override func loadView() {
+        super.loadView()
         view.backgroundColor = .yellow
-        
-//        print(Network.read(Bible.self, from: "Jason") as Any)
-    }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        struct Jason: Codable {
+            let type: String?
+            let coordinates: [String]
+        }
+        print(Network.read(Jason.self, from: "Jason") as Any)
     }
 }
