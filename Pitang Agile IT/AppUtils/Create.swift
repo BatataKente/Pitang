@@ -12,7 +12,7 @@ struct Create {
     static func navigationController(rootViewController: UIViewController) -> UINavigationController {
         
         let navigationController = UINavigationController(rootViewController: rootViewController)
-        navigationController.navigationBar.tintColor = .white
+        navigationController.navigationBar.tintColor = Assets.Colors.reverseDark
         
         let standardAppearance = UINavigationBarAppearance()
 
@@ -70,7 +70,7 @@ struct Create {
     }
     
     static func label(_ text: String? = nil,
-                      color: UIColor = .black,
+                      color: UIColor? = Assets.Colors.reverseDark,
                       font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                       alignment: NSTextAlignment = .left,
                       alpha: CGFloat = 1) -> UILabel {
@@ -89,11 +89,11 @@ struct Create {
     static func button(_ title: String? = nil,
                        font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                        image: UIImage? = nil,
-                       handler: @escaping UIActionHandler) -> UIButton {
+                       handler: UIActionHandler? = nil) -> UIButton {
         let button = UIButton()
         button.setTitle(title, for: .normal)
         button.setImage(image, for: .normal)
-        button.addAction(UIAction(handler: handler), for: .touchUpInside)
+        if let handler = handler {button.addAction(UIAction(handler: handler), for: .touchUpInside)}
         button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         button.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         button.titleLabel?.font = font
