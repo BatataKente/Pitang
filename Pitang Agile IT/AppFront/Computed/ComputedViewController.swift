@@ -7,16 +7,6 @@
 
 import UIKit
 
-class Person {
-    let name = "Josicleison"
-    let age = 18
-    let heightInFeet = 6
-    var podeSerPreso:Bool {
-        return age >= 18 && heightInFeet >= 6
-    }
-    init() {}
-}
-
 class ComputedViewController: UIViewController {
     let josicleison = Person()
     var button: UIButton = {
@@ -39,17 +29,11 @@ class ComputedViewController: UIViewController {
                                                            height: 50)))
         customView.backgroundColor = .white
         view.addSubview(customView)
-    }
-}
-
-extension UIView {
-    var width: CGFloat {
-        return frame.size.width
-    }
-    var height: CGFloat {
-        return frame.size.height
-    }
-    var bottom: CGFloat {
-        return frame.maxY
+        
+        var employee = Employee(name: "Josicleison", annualSalary: 1000, weeksPerYear: 48, hoursPerDay: 7.5)
+        print(employee.weeklySalary)
+        print(employee.hourlyWage)
+        employee.hourlyWage = 300
+        print(employee.hourlyWage)
     }
 }

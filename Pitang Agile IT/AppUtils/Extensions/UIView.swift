@@ -8,6 +8,15 @@
 import UIKit
 
 extension UIView {
+    var width: CGFloat {
+        get{frame.size.width}
+    }
+    var height: CGFloat {
+        get{frame.size.height}
+    }
+    var bottom: CGFloat {
+        get{frame.maxY}
+    }
     func addSubviews(_ views: [UIView]) {
         for view in views {
             addSubview(view)

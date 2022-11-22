@@ -10,6 +10,7 @@
 		1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */; };
 		1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */; };
 		1D3F073D29267FE7000DC62E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F073C29267FE7000DC62E /* Book.swift */; };
+		1D45D48A292D49730023F70B /* ComputedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45D489292D49730023F70B /* ComputedModel.swift */; };
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
 		1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* MoviesViewController.swift */; };
@@ -57,6 +58,7 @@
 		1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveViewController.swift; sourceTree = "<group>"; };
 		1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveModel.swift; sourceTree = "<group>"; };
 		1D3F073C29267FE7000DC62E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		1D45D489292D49730023F70B /* ComputedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedModel.swift; sourceTree = "<group>"; };
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D539F20291A8E7400C85888 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */,
+				1D45D489292D49730023F70B /* ComputedModel.swift */,
 			);
 			path = Computed;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				1D875F562926B0F700169B84 /* TestViewController.swift in Sources */,
 				1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */,
 				1D539F45291AA40600C85888 /* Movie.swift in Sources */,
+				1D45D48A292D49730023F70B /* ComputedModel.swift in Sources */,
 				1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */,
 				1DFC9AA7291FCF29007F4E2F /* AudioBookViewController.swift in Sources */,
 				1D3F073D29267FE7000DC62E /* Book.swift in Sources */,
