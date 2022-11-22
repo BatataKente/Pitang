@@ -38,7 +38,7 @@ class MoviesViewController: UIViewController {
         
         Task {[weak self] in
              
-            guard let data = await Network.call(from: "https://api.themoviedb.org/3/movie/popular?api_key=") else {return}
+            guard let data = await Network.call(from: "https://api.themoviedb.org/3/movie/popular?api_key=caf1ab0511589bd064968e2fabd2e42b") else {return}
             
             self?.movies = Network.decode(Movies.self, from: data)
             self?.table.view.reloadData()

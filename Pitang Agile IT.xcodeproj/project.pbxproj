@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */; };
+		1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */; };
 		1D3F073D29267FE7000DC62E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F073C29267FE7000DC62E /* Book.swift */; };
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
@@ -27,6 +29,9 @@
 		1D8C6EC32929806E000BCBE4 /* Jason.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC229297F1C000BCBE4 /* Jason.geojson */; };
 		1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */; };
 		1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACDD672926561A00E283EF /* ReadViewController.swift */; };
+		1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */; };
+		1DADF2DD292BFBC700FB3830 /* Josicleison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DC292BFBC700FB3830 /* Josicleison.swift */; };
+		1DADF2DF292BFF6F00FB3830 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DE292BFF6F00FB3830 /* Water.swift */; };
 		1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */; };
 		1DE060B0292BB590007D7DE4 /* Batatinha.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE060AF292BB590007D7DE4 /* Batatinha.rtf */; };
 		1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */; };
@@ -38,7 +43,19 @@
 		1DFC9AA7291FCF29007F4E2F /* AudioBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC9AA6291FCF29007F4E2F /* AudioBookViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1DADF2D7292BFADB00FB3830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D539F13291A8E7400C85888 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D539F1A291A8E7400C85888;
+			remoteInfo = "Pitang Agile IT";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveViewController.swift; sourceTree = "<group>"; };
+		1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveModel.swift; sourceTree = "<group>"; };
 		1D3F073C29267FE7000DC62E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +78,10 @@
 		1D8C6EC229297F1C000BCBE4 /* Jason.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jason.geojson; sourceTree = "<group>"; };
 		1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewController.swift; sourceTree = "<group>"; };
 		1DACDD672926561A00E283EF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
+		1DADF2D3292BFADB00FB3830 /* Pitang Agile IT Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitang Agile IT Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitang_Agile_IT_Tests.swift; sourceTree = "<group>"; };
+		1DADF2DC292BFBC700FB3830 /* Josicleison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Josicleison.swift; sourceTree = "<group>"; };
+		1DADF2DE292BFF6F00FB3830 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedViewController.swift; sourceTree = "<group>"; };
 		1DE060AF292BB590007D7DE4 /* Batatinha.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Batatinha.rtf; sourceTree = "<group>"; };
 		1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadModel.swift; sourceTree = "<group>"; };
@@ -80,13 +101,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DADF2D0292BFADB00FB3830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2999B3292BE08900CC5A01 /* Observe */ = {
+			isa = PBXGroup;
+			children = (
+				1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */,
+				1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */,
+			);
+			path = Observe;
+			sourceTree = "<group>";
+		};
 		1D539F12291A8E7400C85888 = {
 			isa = PBXGroup;
 			children = (
 				1D539F1D291A8E7400C85888 /* Pitang Agile IT */,
+				1DADF2D4292BFADB00FB3830 /* Pitang Agile IT Tests */,
 				1D539F1C291A8E7400C85888 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */,
+				1DADF2D3292BFADB00FB3830 /* Pitang Agile IT Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,12 +141,12 @@
 		1D539F1D291A8E7400C85888 /* Pitang Agile IT */ = {
 			isa = PBXGroup;
 			children = (
-				1D8C6EC229297F1C000BCBE4 /* Jason.geojson */,
 				1D539F34291A8EB000C85888 /* AppFront */,
 				1D539F33291A8E9D00C85888 /* AppDelegate */,
 				1D539F32291A8E9600C85888 /* AppUtils */,
 				1D539F29291A8E7600C85888 /* LaunchScreen.storyboard */,
 				1D539F2C291A8E7600C85888 /* Info.plist */,
+				1D8C6EC229297F1C000BCBE4 /* Jason.geojson */,
 				1DE060AF292BB590007D7DE4 /* Batatinha.rtf */,
 				1DE060B5292BBECC007D7DE4 /* Batatas.rtf */,
 			);
@@ -140,6 +179,7 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
+				1D2999B3292BE08900CC5A01 /* Observe */,
 				1D8C6EC4292981A7000BCBE4 /* Animated */,
 				1D875F522926AC6600169B84 /* Book */,
 				1DACDD662926560800E283EF /* Read */,
@@ -193,6 +233,7 @@
 			children = (
 				1D539F44291AA40600C85888 /* Movie.swift */,
 				1D3F073C29267FE7000DC62E /* Book.swift */,
+				1DADF2DE292BFF6F00FB3830 /* Water.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +262,15 @@
 				1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */,
 			);
 			path = Read;
+			sourceTree = "<group>";
+		};
+		1DADF2D4292BFADB00FB3830 /* Pitang Agile IT Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */,
+				1DADF2DC292BFBC700FB3830 /* Josicleison.swift */,
+			);
+			path = "Pitang Agile IT Tests";
 			sourceTree = "<group>";
 		};
 		1DC67FBD2925455100F3D714 /* Computed */ = {
@@ -269,6 +319,24 @@
 			productReference = 1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1DADF2D2292BFADB00FB3830 /* Pitang Agile IT Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DADF2D9292BFADB00FB3830 /* Build configuration list for PBXNativeTarget "Pitang Agile IT Tests" */;
+			buildPhases = (
+				1DADF2CF292BFADB00FB3830 /* Sources */,
+				1DADF2D0292BFADB00FB3830 /* Frameworks */,
+				1DADF2D1292BFADB00FB3830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DADF2D8292BFADB00FB3830 /* PBXTargetDependency */,
+			);
+			name = "Pitang Agile IT Tests";
+			productName = "Pitang Agile IT Tests";
+			productReference = 1DADF2D3292BFADB00FB3830 /* Pitang Agile IT Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,6 +349,10 @@
 				TargetAttributes = {
 					1D539F1A291A8E7400C85888 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					1DADF2D2292BFADB00FB3830 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 1D539F1A291A8E7400C85888;
 					};
 				};
 			};
@@ -298,6 +370,7 @@
 			projectRoot = "";
 			targets = (
 				1D539F1A291A8E7400C85888 /* Pitang Agile IT */,
+				1DADF2D2292BFADB00FB3830 /* Pitang Agile IT Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +385,13 @@
 				1D539F2B291A8E7600C85888 /* LaunchScreen.storyboard in Resources */,
 				1D539F28291A8E7600C85888 /* Assets.xcassets in Resources */,
 				1DE060B0292BB590007D7DE4 /* Batatinha.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DADF2D1292BFADB00FB3830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */,
 				1D539F4D291AD88800C85888 /* Player.swift in Sources */,
 				1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */,
 				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
@@ -355,7 +436,9 @@
 				1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */,
 				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
 				1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */,
+				1DADF2DF292BFF6F00FB3830 /* Water.swift in Sources */,
 				1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */,
+				1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
 				1D875F562926B0F700169B84 /* TestViewController.swift in Sources */,
 				1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */,
@@ -370,7 +453,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DADF2CF292BFADB00FB3830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DADF2DD292BFBC700FB3830 /* Josicleison.swift in Sources */,
+				1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DADF2D8292BFADB00FB3830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D539F1A291A8E7400C85888 /* Pitang Agile IT */;
+			targetProxy = 1DADF2D7292BFADB00FB3830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1D539F29291A8E7600C85888 /* LaunchScreen.storyboard */ = {
@@ -552,6 +652,40 @@
 			};
 			name = Release;
 		};
+		1DADF2DA292BFADB00FB3830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-sys.Pitang-Agile-IT-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitang Agile IT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pitang Agile IT";
+			};
+			name = Debug;
+		};
+		1DADF2DB292BFADB00FB3830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-sys.Pitang-Agile-IT-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitang Agile IT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pitang Agile IT";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +703,15 @@
 			buildConfigurations = (
 				1D539F30291A8E7600C85888 /* Debug */,
 				1D539F31291A8E7600C85888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DADF2D9292BFADB00FB3830 /* Build configuration list for PBXNativeTarget "Pitang Agile IT Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DADF2DA292BFADB00FB3830 /* Debug */,
+				1DADF2DB292BFADB00FB3830 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
