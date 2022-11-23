@@ -11,6 +11,7 @@
 		1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */; };
 		1D3F073D29267FE7000DC62E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F073C29267FE7000DC62E /* Book.swift */; };
 		1D45D48A292D49730023F70B /* ComputedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45D489292D49730023F70B /* ComputedModel.swift */; };
+		1D4FB4B3292E59A5003DFA6D /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4FB4B2292E59A5003DFA6D /* PickerViewController.swift */; };
 		1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F1E291A8E7400C85888 /* AppDelegate.swift */; };
 		1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F20291A8E7400C85888 /* SceneDelegate.swift */; };
 		1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F22291A8E7400C85888 /* MoviesViewController.swift */; };
@@ -59,6 +60,7 @@
 		1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveModel.swift; sourceTree = "<group>"; };
 		1D3F073C29267FE7000DC62E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1D45D489292D49730023F70B /* ComputedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedModel.swift; sourceTree = "<group>"; };
+		1D4FB4B2292E59A5003DFA6D /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		1D539F1B291A8E7400C85888 /* Pitang Agile IT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitang Agile IT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D539F1E291A8E7400C85888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D539F20291A8E7400C85888 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = Observe;
 			sourceTree = "<group>";
 		};
+		1D4FB4B1292E5995003DFA6D /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				1D4FB4B2292E59A5003DFA6D /* PickerViewController.swift */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
 		1D539F12291A8E7400C85888 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +191,7 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
+				1D4FB4B1292E5995003DFA6D /* PickerView */,
 				1D2999B3292BE08900CC5A01 /* Observe */,
 				1D8C6EC4292981A7000BCBE4 /* Animated */,
 				1D875F522926AC6600169B84 /* Book */,
@@ -311,7 +322,6 @@
 				1D539F17291A8E7400C85888 /* Sources */,
 				1D539F18291A8E7400C85888 /* Frameworks */,
 				1D539F19291A8E7400C85888 /* Resources */,
-				1DB52CDF291EC1FC00615C50 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -400,27 +410,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1DB52CDF291EC1FC00615C50 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1D539F17291A8E7400C85888 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -433,6 +422,7 @@
 				1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
 				1D539F40291A9DFF00C85888 /* MovieDetailsViewController.swift in Sources */,
+				1D4FB4B3292E59A5003DFA6D /* PickerViewController.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
 				1DE060B4292BB642007D7DE4 /* Setup.swift in Sources */,
 				1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */,

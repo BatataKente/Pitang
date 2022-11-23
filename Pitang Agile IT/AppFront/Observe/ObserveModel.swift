@@ -11,7 +11,7 @@ struct Persona {
     var firstName: String {
         didSet {
             print("a new first name was set: \(firstName)!")
-            self.lastName
+//            self.lastName
         }
     }
     var lastName: String?

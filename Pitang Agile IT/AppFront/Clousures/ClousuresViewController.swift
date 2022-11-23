@@ -28,13 +28,13 @@ class ClousuresViewController: UIViewController {
                         Student(name: "Alfredo", score: 60),
                         Student(name: "Proibildo", score: 86)]
         
-        let topStudentFilter: (Student) -> Bool = {student in
+        let _: (Student) -> Bool = {student in
             return student.score < 80
         }
 //        let reprovedStudents = students.filter(topStudentFilter)
         let reprovedStudents = students.filter{$0.score < 80}
         let aprovedStudents = students.filter{$0.score > 80}
-        let studentRanking = students.sorted {$0.score > $1.score}
+        let _ = students.sorted {$0.score > $1.score}
         for student in reprovedStudents {
             if student.name.last == "a" ||
                student.name.last == "e" {print("\(student.name) foi reprovada!"); continue}

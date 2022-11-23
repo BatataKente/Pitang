@@ -12,6 +12,7 @@ final class MenuViewController: UIViewController {
     
     private let viewControllers = [MoviesViewController(),
                                    ClousuresViewController(),
+                                   PickerViewController(),
                                    ReadViewController(),
                                    ObserveViewController(),
                                    AudioBookViewController(),
