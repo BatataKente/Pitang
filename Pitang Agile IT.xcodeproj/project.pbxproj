@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */; };
 		1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */; };
+		1D2A833E292FEF6F00A0ECB7 /* ComputedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A833D292FEF6F00A0ECB7 /* ComputedView.swift */; };
 		1D3F073D29267FE7000DC62E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F073C29267FE7000DC62E /* Book.swift */; };
 		1D45D48A292D49730023F70B /* ComputedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D45D489292D49730023F70B /* ComputedModel.swift */; };
 		1D4FB4B3292E59A5003DFA6D /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4FB4B2292E59A5003DFA6D /* PickerViewController.swift */; };
@@ -30,6 +31,8 @@
 		1D875F562926B0F700169B84 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F552926B0F700169B84 /* TestViewController.swift */; };
 		1D8C6EC32929806E000BCBE4 /* Jason.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC229297F1C000BCBE4 /* Jason.geojson */; };
 		1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */; };
+		1D9D0E2A293021EE0063E313 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9D0E29293021EE0063E313 /* UIScrollView.swift */; };
+		1D9D0E2D293022310063E313 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9D0E2C293022310063E313 /* ScrollViewController.swift */; };
 		1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACDD672926561A00E283EF /* ReadViewController.swift */; };
 		1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */; };
 		1DADF2DD292BFBC700FB3830 /* Josicleison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DC292BFBC700FB3830 /* Josicleison.swift */; };
@@ -58,6 +61,7 @@
 /* Begin PBXFileReference section */
 		1D2999B4292BE0A300CC5A01 /* ObserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveViewController.swift; sourceTree = "<group>"; };
 		1D2999B6292BE0EE00CC5A01 /* ObserveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveModel.swift; sourceTree = "<group>"; };
+		1D2A833D292FEF6F00A0ECB7 /* ComputedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedView.swift; sourceTree = "<group>"; };
 		1D3F073C29267FE7000DC62E /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1D45D489292D49730023F70B /* ComputedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedModel.swift; sourceTree = "<group>"; };
 		1D4FB4B2292E59A5003DFA6D /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		1D875F552926B0F700169B84 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1D8C6EC229297F1C000BCBE4 /* Jason.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jason.geojson; sourceTree = "<group>"; };
 		1D8C6EC5292981C3000BCBE4 /* AnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewController.swift; sourceTree = "<group>"; };
+		1D9D0E29293021EE0063E313 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		1D9D0E2C293022310063E313 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		1DACDD672926561A00E283EF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		1DADF2D3292BFADB00FB3830 /* Pitang Agile IT Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitang Agile IT Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitang_Agile_IT_Tests.swift; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
+				1D9D0E2B2930220A0063E313 /* ScrollViewController */,
 				1D4FB4B1292E5995003DFA6D /* PickerView */,
 				1D2999B3292BE08900CC5A01 /* Observe */,
 				1D8C6EC4292981A7000BCBE4 /* Animated */,
@@ -219,6 +226,7 @@
 			children = (
 				1D539F3B291A904C00C85888 /* UIView.swift */,
 				1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */,
+				1D9D0E29293021EE0063E313 /* UIScrollView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +276,14 @@
 			path = Animated;
 			sourceTree = "<group>";
 		};
+		1D9D0E2B2930220A0063E313 /* ScrollViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1D9D0E2C293022310063E313 /* ScrollViewController.swift */,
+			);
+			path = ScrollViewController;
+			sourceTree = "<group>";
+		};
 		1DACDD662926560800E283EF /* Read */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +307,7 @@
 			children = (
 				1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */,
 				1D45D489292D49730023F70B /* ComputedModel.swift */,
+				1D2A833D292FEF6F00A0ECB7 /* ComputedView.swift */,
 			);
 			path = Computed;
 			sourceTree = "<group>";
@@ -418,6 +435,7 @@
 				1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */,
 				1D539F4D291AD88800C85888 /* Player.swift in Sources */,
 				1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */,
+				1D9D0E2D293022310063E313 /* ScrollViewController.swift in Sources */,
 				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
 				1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
@@ -426,6 +444,7 @@
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
 				1DE060B4292BB642007D7DE4 /* Setup.swift in Sources */,
 				1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */,
+				1D2A833E292FEF6F00A0ECB7 /* ComputedView.swift in Sources */,
 				1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */,
 				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
 				1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */,
@@ -441,6 +460,7 @@
 				1DFC9AA7291FCF29007F4E2F /* AudioBookViewController.swift in Sources */,
 				1D3F073D29267FE7000DC62E /* Book.swift in Sources */,
 				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
+				1D9D0E2A293021EE0063E313 /* UIScrollView.swift in Sources */,
 				1D539F3C291A904C00C85888 /* UIView.swift in Sources */,
 				1D875F542926AC7B00169B84 /* BookViewController.swift in Sources */,
 				1D539F39291A8F7F00C85888 /* NetWork.swift in Sources */,

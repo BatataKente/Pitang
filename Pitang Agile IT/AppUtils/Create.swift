@@ -70,7 +70,7 @@ struct Create {
     }
     
     static func label(_ text: String? = nil,
-                      color: UIColor? = Assets.Colors.reverseDark,
+                      color: UIColor? = .black,
                       font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                       alignment: NSTextAlignment = .left,
                       alpha: CGFloat = 1) -> UILabel {
@@ -92,6 +92,7 @@ struct Create {
                        handler: UIActionHandler? = nil) -> UIButton {
         let button = UIButton()
         button.setTitle(title, for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.setImage(image, for: .normal)
         if let handler = handler {button.addAction(UIAction(handler: handler), for: .touchUpInside)}
         button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)

@@ -8,18 +8,17 @@
 import UIKit
 
 class ComputedViewController: UIViewController {
-    let josicleison = Person()
-    var button: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .red
-        return button
-    }()
+    
     override func loadView() {
         super.loadView()
         view.backgroundColor = .green
+    }
+    private func call(josicleison: Person) {
         if josicleison.podeSerPreso {
             print("\(josicleison.name) pode ser preso")
         }
+        let button = UIButton()
+        button.backgroundColor = .red
         view.addSubview(button)
         button.constraint([.centerX,.centerY])
         button.shape(size: view.width/4)
