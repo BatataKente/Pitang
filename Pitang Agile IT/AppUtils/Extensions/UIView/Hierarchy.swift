@@ -8,9 +8,14 @@
 import UIKit
 
 extension UIView {
-    func removeSubLayers() {
+    func removeSubViews(if condition: Bool = true) {
+        for subview in subviews where condition {
+            subview.removeFromSuperview()
+        }
+    }
+    func removeSubLayers(if condition: Bool = true) {
         guard let sublayers = layer.sublayers else {return}
-        for layer in sublayers where (layer as? CAGradientLayer) != nil {
+        for layer in sublayers where condition {
             layer.removeFromSuperlayer()
         }
     }

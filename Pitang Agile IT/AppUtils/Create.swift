@@ -8,29 +8,21 @@
 import UIKit
 
 struct Create {
-    
     static func navigationController(rootViewController: UIViewController) -> UINavigationController {
-        
         let navigationController = UINavigationController(rootViewController: rootViewController)
         navigationController.navigationBar.tintColor = Assets.Colors.reverseDark
-        
         let standardAppearance = UINavigationBarAppearance()
-
         standardAppearance.configureWithOpaqueBackground()
         standardAppearance.backgroundColor = UIColor.clear
-
         navigationController.navigationBar.standardAppearance = standardAppearance
         navigationController.navigationBar.scrollEdgeAppearance = standardAppearance
-        
         return navigationController
     }
-    
     static func textField(_ text: String? = nil,
                           font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                           textColor: UIColor? = .black,
                           alignment: NSTextAlignment = .left,
                           background: UIColor? = .white) -> UITextField {
-        
         let textField = UITextField()
         textField.text = text
         textField.font = font
@@ -41,23 +33,18 @@ struct Create {
         
         return textField
     }
-    
     static func stack(_ spacing: CGFloat = 20,
                       arrangedSubviews: [UIView] = [],
                       axis: NSLayoutConstraint.Axis = .vertical) -> UIStackView {
-        
         let stack = UIStackView(arrangedSubviews: arrangedSubviews)
         stack.axis = axis
         stack.spacing = spacing
         stack.alignment = .center
-        
         return stack
     }
-    
     static func imageView(_ image: UIImage? = nil,
                           color: UIColor? = nil,
                           alpha: CGFloat = 1) -> UIImageView {
-        
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
@@ -65,16 +52,13 @@ struct Create {
         imageView.tintColor = color
         imageView.layer.masksToBounds = true
         imageView.alpha = alpha
-        
         return imageView
     }
-    
     static func label(_ text: String? = nil,
                       color: UIColor? = .black,
                       font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                       alignment: NSTextAlignment = .left,
                       alpha: CGFloat = 1) -> UILabel {
-        
         let label = UILabel()
         label.text = text
         label.textColor = color
@@ -82,10 +66,8 @@ struct Create {
         label.textAlignment = alignment
         label.numberOfLines = 0
         label.alpha = alpha
-        
         return label
     }
-    
     static func button(_ title: String? = nil,
                        font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                        image: UIImage? = nil,

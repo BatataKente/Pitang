@@ -8,20 +8,14 @@
 import UIKit
 
 struct Assets {
-    
     static let font = {(size: CGFloat) -> UIFont in
-        
         UIFont.systemFont(ofSize: size, weight: .bold)
     }
-    
     struct Colors {
-        
         static let reverseDark = UIColor(named: "reverseDark")
         static let normalDark = UIColor(named: "normalDark")
     }
-    
     struct Images {
-        
         static let right = UIImage(systemName: "chevron.right")
         static let left = UIImage(systemName: "chevron.left")
     }
