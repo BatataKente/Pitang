@@ -34,21 +34,27 @@ class MovieDetailsViewController: UIViewController {
         title = "\(type(of: self))"
         view.backgroundColor = .systemPurple
         view.addSubviews([movieImageView, movieTitleLabel, movieDescriptionLabel, playButton])
-        movieImageView.constraint([.top,.leading,.trailing])
-        movieImageView.shape(height: view.frame.height*0.3)
-        movieTitleLabel.constraint(attributesAttributes: [.top: .bottom], to: movieImageView, by: 20)
-        movieTitleLabel.constraint(attributesConstants: [.leading: 0, .trailing: 0],
-                                   to: view.safeAreaLayoutGuide)
-        movieDescriptionLabel.constraint(attributesAttributes: [.top: .bottom], to: movieTitleLabel,
-                                         by: view.frame.height*0.05)
-        movieDescriptionLabel.constraint(attributesConstants: [.leading: 40, .trailing: -40],
-                                         to: view.safeAreaLayoutGuide)
-        playButton.constraint([.centerX, .bottom], to: view.safeAreaLayoutGuide)
-//        Task {
-//
-//            guard let data = await Network.call(from: "https://image.tmdb.org/t/p/original\(result?.backdrop_path ?? "")") else {return}
-//
-//            self.movieImageView.image = UIImage(data: data)
-//        }
+        movieImageView
+            .constraint(by: [.top,.leading,.trailing])
+            .shape(constant: view.frame.height*0.3)
+        movieTitleLabel
+            .constraint(attributesAttributes: [.top: .bottom],
+                        to: movieImageView, constant: 20)
+            .constraint(attributesConstants: [.leading: 0, .trailing: 0],
+                        to: view.safeAreaLayoutGuide)
+        movieDescriptionLabel
+            .constraint(attributesAttributes: [.top: .bottom],
+                        to: movieTitleLabel, constant: view.frame.height*0.05)
+            .constraint(attributesConstants: [.leading: 40, .trailing: -40],
+                        to: view.safeAreaLayoutGuide)
+        playButton
+            .constraint(by: [.centerX, .bottom],
+                        to: view.safeAreaLayoutGuide)
+        Task {
+
+            guard let data = await Network.call(from: "https://image.tmdb.org/t/p/original\(result?.backdrop_path ?? "")") else {return}
+
+            self.movieImageView.image = UIImage(data: data)
+        }
     }
 }

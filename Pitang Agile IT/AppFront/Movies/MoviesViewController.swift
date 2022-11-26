@@ -34,7 +34,7 @@ class MoviesViewController: UIViewController {
         table.view.dataSource = self
         table.view.delegate = self
         
-        table.view.constraint([.top, .leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
+        table.view.constraint(by: [.top, .leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
         
         Task {[weak self] in
              

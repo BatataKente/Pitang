@@ -44,19 +44,22 @@ class MoviesTableViewCell: UITableViewCell {
                 
                 contentView.addSubview(movieImageView)
                 
-                movieImageView.constraint(attributesConstants: [.leading: 20, .top: 10, .bottom: -10])
-                movieImageView.constraint(attributesAttributes: [.width: .height], to: movieImageView)
+                movieImageView
+                    .constraint(attributesConstants: [.leading: 20, .top: 10, .bottom: -10])
+                    .constraint(attributesAttributes: [.width: .height], to: movieImageView)
             }
         }
         
         label.constraint(attributesConstants: [.top: 0, .bottom: 0,
-                                                .leading: contentView.frame.height*1.2,
-                                                .trailing: -contentView.frame.height*1.2])
+                                               .leading: contentView.frame.height*1.2,
+                                               .trailing: -contentView.frame.height*1.2])
         
-        arrowImageView.constraint(attributesConstants: [.centerY: 0, .trailing: -20])
-        arrowImageView.shape(size: contentView.frame.height*0.3)
+        arrowImageView
+            .constraint(attributesConstants: [.centerY: 0, .trailing: -20])
+            .shape(constant: contentView.frame.height*0.3)
         
-        line.constraint(attributesConstants: [.leading: 10, .trailing: -10, .bottom: 0])
-        line.shape(height: 2)
+        line
+            .constraint(attributesConstants: [.leading: 10, .trailing: -10, .bottom: 0])
+            .height(constant: 2)
     }
 }

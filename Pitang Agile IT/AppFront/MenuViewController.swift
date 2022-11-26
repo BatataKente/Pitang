@@ -44,7 +44,7 @@ final class MenuViewController: UIViewController {
         view.addSubview(table.view)
         view.backgroundColor = .systemGreen
         
-        table.view.constraint([.top, .leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
+        table.view.constraint(by: [.top, .leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
     }
 }
 
@@ -68,7 +68,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         let label = Create.label("\(type(of: viewControllers[indexPath.row]))", alignment: .center)
         cell.contentView.addSubview(label)
-        label.constraint([.top, .leading, .trailing, .bottom])
+        label.constraint(by: [.top, .leading, .trailing, .bottom])
         
         return cell
     }

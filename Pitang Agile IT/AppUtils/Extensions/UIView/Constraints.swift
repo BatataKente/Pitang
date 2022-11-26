@@ -8,44 +8,14 @@
 import UIKit
 
 extension UIView {
-    var width: CGFloat {
-        get{frame.size.width}
-    }
-    var height: CGFloat {
-        get{frame.size.height}
-    }
-    var bottom: CGFloat {
-        get{frame.maxY}
-    }
-    func addSubviews(_ views: [UIView]) {
-        for view in views {
-            addSubview(view)
-        }
-    }
-    func shape(height: CGFloat? = nil, width: CGFloat? = nil, size: CGFloat? = nil) {
-        translatesAutoresizingMaskIntoConstraints = false
-        if let height = height {
-            heightAnchor.constraint(equalToConstant: height).isActive = true
-        } else if let width = width {
-            widthAnchor.constraint(equalToConstant: width).isActive = true
-        } else if let size = size {
-            heightAnchor.constraint(equalToConstant: size).isActive = true
-            widthAnchor.constraint(equalToConstant: size).isActive = true
-        }
-    }
-    func constraint(_ attributes: [NSLayoutConstraint.Attribute]? = nil,
-                    attributesAttributes: [NSLayoutConstraint.Attribute:
-                                            NSLayoutConstraint.Attribute]? = nil,
-                    attributesConstants: [NSLayoutConstraint.Attribute:
-                                           CGFloat]? = nil,
+@discardableResult
+    func constraint(by attributes: [NSLayoutConstraint.Attribute]? = nil,
                     to item: Any? = nil,
                     relation: NSLayoutConstraint.Relation = .equal,
                     multiplier: CGFloat = 1,
-                    by constant: CGFloat? = nil) {
-
+                    constant: CGFloat? = nil) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
-
-        guard let superview = self.superview else {return}
+        guard let superview = self.superview else {return self}
         if let attributes = attributes {
 
             for attribute in attributes {
@@ -59,6 +29,17 @@ extension UIView {
                                                            constant: constant ?? 0))
             }
         }
+        return self
+    }
+@discardableResult
+    func constraint(attributesAttributes: [NSLayoutConstraint.Attribute:
+                                            NSLayoutConstraint.Attribute]? = nil,
+                    to item: Any? = nil,
+                    relation: NSLayoutConstraint.Relation = .equal,
+                    multiplier: CGFloat = 1,
+                    constant: CGFloat? = nil) -> Self {
+        translatesAutoresizingMaskIntoConstraints = false
+        guard let superview = self.superview else {return self}
         if let attributes = attributesAttributes {
 
             for attribute in attributes {
@@ -72,6 +53,17 @@ extension UIView {
                                                            constant: constant ?? 0))
             }
         }
+        return self
+    }
+@discardableResult
+    func constraint(attributesConstants: [NSLayoutConstraint.Attribute:
+                                           CGFloat]? = nil,
+                    to item: Any? = nil,
+                    relation: NSLayoutConstraint.Relation = .equal,
+                    multiplier: CGFloat = 1,
+                    constant: CGFloat? = nil) -> Self {
+        translatesAutoresizingMaskIntoConstraints = false
+        guard let superview = self.superview else {return self}
         if let attributes = attributesConstants {
 
             for attribute in attributes {
@@ -85,5 +77,25 @@ extension UIView {
                                                            constant: attribute.value))
             }
         }
+        return self
+    }
+@discardableResult
+    func height(constant: CGFloat) -> Self {
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: constant).isActive = true
+        return self
+    }
+@discardableResult
+    func width(constant: CGFloat) -> Self {
+        translatesAutoresizingMaskIntoConstraints = false
+        widthAnchor.constraint(equalToConstant: constant).isActive = true
+        return self
+    }
+@discardableResult
+    func shape(constant: CGFloat) -> Self {
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: constant).isActive = true
+        widthAnchor.constraint(equalToConstant: constant).isActive = true
+        return self
     }
 }
