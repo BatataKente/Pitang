@@ -27,6 +27,7 @@ final class ScrollViewController: UIViewController, Setup {
     }()
     override func loadView() {
         super.loadView()
+        title = "\(type(of: self))"
         setup()
     }
     func setupView() {

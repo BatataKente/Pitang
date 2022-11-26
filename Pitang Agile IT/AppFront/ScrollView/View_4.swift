@@ -53,6 +53,7 @@ extension View_4: UICollectionViewDelegate,
         let label = Create.button("\(indexPath.row)") {_ in
             print(indexPath.row)
         }
+        label.backgroundColor = .systemPurple
         cell.contentView.backgroundColor = .systemPink
         cell.contentView.addSubviews([imageView, label])
         imageView
