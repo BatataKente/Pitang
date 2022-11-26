@@ -72,10 +72,10 @@ extension ReadViewController: Setup {
         view.addSubviews([label, textView, stack])
     }
     func setupConstraints() {
-        label.constraint(by: [.leading, .trailing, .top], to: view.safeAreaLayoutGuide)
+        label.constraint(attributes: [.leading, .trailing, .top], to: view.safeAreaLayoutGuide)
         textView.constraint(attributesAttributes: [.top: .bottom], to: label)
-        textView.constraint(by: [.leading, .trailing], to: view.safeAreaLayoutGuide)
+        textView.constraint(attributes: [.leading, .trailing], to: view.safeAreaLayoutGuide)
         textView.constraint(attributesAttributes: [.bottom: .top], to: stack)
-        stack.constraint(by: [.leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
+        stack.constraint(attributes: [.leading, .trailing, .bottom], to: view.safeAreaLayoutGuide)
     }
 }

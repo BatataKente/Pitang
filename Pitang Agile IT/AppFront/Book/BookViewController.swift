@@ -38,6 +38,6 @@ final class BookViewController: UIViewController {
         }
     }
     func setupConstraints() {
-        textView.constraint(by: [.top,.leading,.trailing,.bottom], to: view.safeAreaLayoutGuide)
+        textView.constraint(attributes: [.top,.leading,.trailing,.bottom], to: view.safeAreaLayoutGuide)
     }
 }

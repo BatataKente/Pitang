@@ -99,7 +99,7 @@ struct Create {
         button.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         button.titleLabel?.font = font
         button.imageView?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
-        button.imageView?.constraint(by: [.height], to: button.titleLabel,
+        button.imageView?.constraint(attribute: .height, to: button.titleLabel,
                                      multiplier: 0.9)
         button.imageView?.constraint(attributesAttributes: [.width: .height], to: button.imageView,
                                      multiplier: 0.7)

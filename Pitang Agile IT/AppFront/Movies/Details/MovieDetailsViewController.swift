@@ -35,7 +35,7 @@ class MovieDetailsViewController: UIViewController {
         view.backgroundColor = .systemPurple
         view.addSubviews([movieImageView, movieTitleLabel, movieDescriptionLabel, playButton])
         movieImageView
-            .constraint(by: [.top,.leading,.trailing])
+            .constraint(attributes: [.top,.leading,.trailing])
             .shape(constant: view.frame.height*0.3)
         movieTitleLabel
             .constraint(attributesAttributes: [.top: .bottom],
@@ -48,7 +48,7 @@ class MovieDetailsViewController: UIViewController {
             .constraint(attributesConstants: [.leading: 40, .trailing: -40],
                         to: view.safeAreaLayoutGuide)
         playButton
-            .constraint(by: [.centerX, .bottom],
+            .constraint(attributes: [.centerX, .bottom],
                         to: view.safeAreaLayoutGuide)
         Task {
 
