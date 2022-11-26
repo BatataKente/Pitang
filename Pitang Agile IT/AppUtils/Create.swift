@@ -55,14 +55,19 @@ struct Create {
         return imageView
     }
     static func label(_ text: String? = nil,
+                      attributedText: NSAttributedString? = nil,
                       color: UIColor? = .black,
                       font: UIFont? = UIFont.systemFont(ofSize: 20, weight: .bold),
                       alignment: NSTextAlignment = .left,
                       alpha: CGFloat = 1) -> UILabel {
         let label = UILabel()
-        label.text = text
-        label.textColor = color
-        label.font = font
+        if let attributedText = attributedText {
+            label.attributedText = attributedText
+        } else {
+            label.text = text
+            label.textColor = color
+            label.font = font
+        }
         label.textAlignment = alignment
         label.numberOfLines = 0
         label.alpha = alpha

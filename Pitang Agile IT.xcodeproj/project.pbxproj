@@ -44,6 +44,10 @@
 		1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */; };
 		1DE060B4292BB642007D7DE4 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE060B3292BB642007D7DE4 /* Setup.swift */; };
 		1DE060B6292BBECC007D7DE4 /* Batatas.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE060B5292BBECC007D7DE4 /* Batatas.rtf */; };
+		1DE123172932BD83006D1587 /* View_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE123162932BD83006D1587 /* View_1.swift */; };
+		1DE123192932C401006D1587 /* View_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE123182932C401006D1587 /* View_2.swift */; };
+		1DE1231B2932C7D0006D1587 /* View_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1231A2932C7D0006D1587 /* View_3.swift */; };
+		1DE1231D2932CE0F006D1587 /* View_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1231C2932CE0F006D1587 /* View_4.swift */; };
 		1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */; };
 		1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */; };
 		1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFC7B65291BD3B100152452 /* MenuViewController.swift */; };
@@ -101,6 +105,10 @@
 		1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadModel.swift; sourceTree = "<group>"; };
 		1DE060B3292BB642007D7DE4 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
 		1DE060B5292BBECC007D7DE4 /* Batatas.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Batatas.rtf; sourceTree = "<group>"; };
+		1DE123162932BD83006D1587 /* View_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_1.swift; sourceTree = "<group>"; };
+		1DE123182932C401006D1587 /* View_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_2.swift; sourceTree = "<group>"; };
+		1DE1231A2932C7D0006D1587 /* View_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_3.swift; sourceTree = "<group>"; };
+		1DE1231C2932CE0F006D1587 /* View_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View_4.swift; sourceTree = "<group>"; };
 		1DEA7A4A291D821D003D4B98 /* ClousuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresViewController.swift; sourceTree = "<group>"; };
 		1DEA7A4C291D8291003D4B98 /* ClousuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClousuresView.swift; sourceTree = "<group>"; };
 		1DFC7B65291BD3B100152452 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -201,7 +209,7 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
-				1D9D0E2B2930220A0063E313 /* ScrollViewController */,
+				1D9D0E2B2930220A0063E313 /* ScrollView */,
 				1D4FB4B1292E5995003DFA6D /* PickerView */,
 				1D2999B3292BE08900CC5A01 /* Observe */,
 				1D8C6EC4292981A7000BCBE4 /* Animated */,
@@ -290,12 +298,16 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		1D9D0E2B2930220A0063E313 /* ScrollViewController */ = {
+		1D9D0E2B2930220A0063E313 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				1D9D0E2C293022310063E313 /* ScrollViewController.swift */,
+				1DE123162932BD83006D1587 /* View_1.swift */,
+				1DE123182932C401006D1587 /* View_2.swift */,
+				1DE1231A2932C7D0006D1587 /* View_3.swift */,
+				1DE1231C2932CE0F006D1587 /* View_4.swift */,
 			);
-			path = ScrollViewController;
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 		1DACDD662926560800E283EF /* Read */ = {
@@ -447,9 +459,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */,
+				1DE1231D2932CE0F006D1587 /* View_4.swift in Sources */,
 				1D539F4D291AD88800C85888 /* Player.swift in Sources */,
 				1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */,
 				1D9D0E2D293022310063E313 /* ScrollViewController.swift in Sources */,
+				1DE1231B2932C7D0006D1587 /* View_3.swift in Sources */,
 				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
 				1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
@@ -462,12 +476,14 @@
 				1D2A833E292FEF6F00A0ECB7 /* ComputedView.swift in Sources */,
 				1DFC7B66291BD3B100152452 /* MenuViewController.swift in Sources */,
 				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
+				1DE123172932BD83006D1587 /* View_1.swift in Sources */,
 				1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */,
 				1DADF2DF292BFF6F00FB3830 /* Water.swift in Sources */,
 				1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */,
 				1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
 				1D875F562926B0F700169B84 /* TestViewController.swift in Sources */,
+				1DE123192932C401006D1587 /* View_2.swift in Sources */,
 				1DEA7A4D291D8291003D4B98 /* ClousuresView.swift in Sources */,
 				1D539F45291AA40600C85888 /* Movie.swift in Sources */,
 				1D45D48A292D49730023F70B /* ComputedModel.swift in Sources */,
