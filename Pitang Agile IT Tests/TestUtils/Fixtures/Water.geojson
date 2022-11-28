@@ -1,0 +1,28 @@
+{
+    "waters": [
+        {
+            "weather": [
+                {
+                    "id": 804,
+                    "description": "overcast clouds"
+                }
+            ],
+            "main": {
+                "temp": 10.58
+            },
+            "name": "Calgary"
+        },
+        {
+            "weather": [
+                {
+                    "id": 804,
+                    "description": "overcast clouds"
+                }
+            ],
+            "main": {
+                "temp": 10.58
+            },
+            "name": ""
+        }
+    ]
+}

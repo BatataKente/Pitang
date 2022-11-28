@@ -28,14 +28,14 @@ struct Network {
     }
     static func read<T: Codable>(_ what: T.Type, from file: String, type: String = "geojson") -> T? {
         guard let url = Bundle.main.url(forResource: file, withExtension: type) else {
-            print("Wrong url"); return nil
+            fatalError("Wrong url")
         }
         guard let data = try? Data(contentsOf: url) else {
-            print("Data decoding error"); return nil
+            fatalError("Error while reading data")
         }
-        guard let books = try? JSONDecoder().decode(T.self, from: data) else {
-            print("Json decoding error"); return nil
+        guard let result = try? JSONDecoder().decode(T.self, from: data) else {
+            fatalError("Error while decoding json")
         }
-        return books
+        return result
     }
 }

@@ -27,6 +27,9 @@
 		1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */; };
 		1D539F4D291AD88800C85888 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F4C291AD88800C85888 /* Player.swift */; };
 		1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */; };
+		1D68D67F2934F53A001ADA47 /* Water.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D68D67E2934F15D001ADA47 /* Water.geojson */; };
+		1D68D6802934F669001ADA47 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DE292BFF6F00FB3830 /* Water.swift */; };
+		1D68D6822934F826001ADA47 /* TestReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68D6812934F826001ADA47 /* TestReader.swift */; };
 		1D875F542926AC7B00169B84 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F532926AC7B00169B84 /* BookViewController.swift */; };
 		1D875F562926B0F700169B84 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F552926B0F700169B84 /* TestViewController.swift */; };
 		1D8C6EC32929806E000BCBE4 /* Jason.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC229297F1C000BCBE4 /* Jason.geojson */; };
@@ -37,8 +40,7 @@
 		1D9D0E2D293022310063E313 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9D0E2C293022310063E313 /* ScrollViewController.swift */; };
 		1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DACDD672926561A00E283EF /* ReadViewController.swift */; };
 		1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */; };
-		1DADF2DD292BFBC700FB3830 /* Josicleison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DC292BFBC700FB3830 /* Josicleison.swift */; };
-		1DADF2DF292BFF6F00FB3830 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DE292BFF6F00FB3830 /* Water.swift */; };
+		1DADF2DD292BFBC700FB3830 /* WaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DC292BFBC700FB3830 /* WaterTest.swift */; };
 		1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */; };
 		1DE060B0292BB590007D7DE4 /* Batatinha.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE060AF292BB590007D7DE4 /* Batatinha.rtf */; };
 		1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */; };
@@ -87,6 +89,8 @@
 		1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		1D539F4C291AD88800C85888 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		1D68D67E2934F15D001ADA47 /* Water.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Water.geojson; sourceTree = "<group>"; };
+		1D68D6812934F826001ADA47 /* TestReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReader.swift; sourceTree = "<group>"; };
 		1D875F532926AC7B00169B84 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		1D875F552926B0F700169B84 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1D8C6EC229297F1C000BCBE4 /* Jason.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jason.geojson; sourceTree = "<group>"; };
@@ -98,7 +102,7 @@
 		1DACDD672926561A00E283EF /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		1DADF2D3292BFADB00FB3830 /* Pitang Agile IT Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitang Agile IT Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitang_Agile_IT_Tests.swift; sourceTree = "<group>"; };
-		1DADF2DC292BFBC700FB3830 /* Josicleison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Josicleison.swift; sourceTree = "<group>"; };
+		1DADF2DC292BFBC700FB3830 /* WaterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTest.swift; sourceTree = "<group>"; };
 		1DADF2DE292BFF6F00FB3830 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedViewController.swift; sourceTree = "<group>"; };
 		1DE060AF292BB590007D7DE4 /* Batatinha.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Batatinha.rtf; sourceTree = "<group>"; };
@@ -266,9 +270,35 @@
 			children = (
 				1D539F44291AA40600C85888 /* Movie.swift */,
 				1D3F073C29267FE7000DC62E /* Book.swift */,
-				1DADF2DE292BFF6F00FB3830 /* Water.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1D68D67D2934F13E001ADA47 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				1D68D67E2934F15D001ADA47 /* Water.geojson */,
+				1DADF2DE292BFF6F00FB3830 /* Water.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		1D68D6832934F83A001ADA47 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */,
+				1DADF2DC292BFBC700FB3830 /* WaterTest.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1D68D6842934F846001ADA47 /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1D68D67D2934F13E001ADA47 /* Fixtures */,
+				1D68D6812934F826001ADA47 /* TestReader.swift */,
+			);
+			path = TestUtils;
 			sourceTree = "<group>";
 		};
 		1D875F522926AC6600169B84 /* Book */ = {
@@ -322,8 +352,8 @@
 		1DADF2D4292BFADB00FB3830 /* Pitang Agile IT Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */,
-				1DADF2DC292BFBC700FB3830 /* Josicleison.swift */,
+				1D68D6842934F846001ADA47 /* TestUtils */,
+				1D68D6832934F83A001ADA47 /* Tests */,
 			);
 			path = "Pitang Agile IT Tests";
 			sourceTree = "<group>";
@@ -448,6 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D68D67F2934F53A001ADA47 /* Water.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,7 +509,6 @@
 				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
 				1DE123172932BD83006D1587 /* View_1.swift in Sources */,
 				1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */,
-				1DADF2DF292BFF6F00FB3830 /* Water.swift in Sources */,
 				1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */,
 				1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
@@ -503,7 +533,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DADF2DD292BFBC700FB3830 /* Josicleison.swift in Sources */,
+				1DADF2DD292BFBC700FB3830 /* WaterTest.swift in Sources */,
+				1D68D6802934F669001ADA47 /* Water.swift in Sources */,
+				1D68D6822934F826001ADA47 /* TestReader.swift in Sources */,
 				1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
