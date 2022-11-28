@@ -26,6 +26,8 @@
 		1D539F45291AA40600C85888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F44291AA40600C85888 /* Movie.swift */; };
 		1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */; };
 		1D539F4D291AD88800C85888 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D539F4C291AD88800C85888 /* Player.swift */; };
+		1D56CF51293512E3006798F1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56CF50293512E3006798F1 /* PickerView.swift */; };
+		1D56CF5329351D40006798F1 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56CF5229351D40006798F1 /* DatePicker.swift */; };
 		1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */; };
 		1D68D67F2934F53A001ADA47 /* Water.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D68D67E2934F15D001ADA47 /* Water.geojson */; };
 		1D68D6802934F669001ADA47 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DE292BFF6F00FB3830 /* Water.swift */; };
@@ -88,6 +90,8 @@
 		1D539F44291AA40600C85888 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1D539F48291AC3D500C85888 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 		1D539F4C291AD88800C85888 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1D56CF50293512E3006798F1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		1D56CF5229351D40006798F1 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		1D68D67E2934F15D001ADA47 /* Water.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Water.geojson; sourceTree = "<group>"; };
 		1D68D6812934F826001ADA47 /* TestReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReader.swift; sourceTree = "<group>"; };
@@ -146,12 +150,14 @@
 			path = Observe;
 			sourceTree = "<group>";
 		};
-		1D4FB4B1292E5995003DFA6D /* PickerView */ = {
+		1D4FB4B1292E5995003DFA6D /* Picker&Date */ = {
 			isa = PBXGroup;
 			children = (
 				1D4FB4B2292E59A5003DFA6D /* PickerViewController.swift */,
+				1D56CF50293512E3006798F1 /* PickerView.swift */,
+				1D56CF5229351D40006798F1 /* DatePicker.swift */,
 			);
-			path = PickerView;
+			path = "Picker&Date";
 			sourceTree = "<group>";
 		};
 		1D539F12291A8E7400C85888 = {
@@ -213,8 +219,9 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
-				1D9D0E2B2930220A0063E313 /* ScrollView */,
-				1D4FB4B1292E5995003DFA6D /* PickerView */,
+				1D56CF4F2935122F006798F1 /* Solid */,
+				1D9D0E2B2930220A0063E313 /* Scroll */,
+				1D4FB4B1292E5995003DFA6D /* Picker&Date */,
 				1D2999B3292BE08900CC5A01 /* Observe */,
 				1D8C6EC4292981A7000BCBE4 /* Animated */,
 				1D875F522926AC6600169B84 /* Book */,
@@ -274,6 +281,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1D56CF4F2935122F006798F1 /* Solid */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Solid;
+			sourceTree = "<group>";
+		};
 		1D68D67D2934F13E001ADA47 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,7 +342,7 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		1D9D0E2B2930220A0063E313 /* ScrollView */ = {
+		1D9D0E2B2930220A0063E313 /* Scroll */ = {
 			isa = PBXGroup;
 			children = (
 				1D9D0E2C293022310063E313 /* ScrollViewController.swift */,
@@ -337,7 +351,7 @@
 				1DE1231A2932C7D0006D1587 /* View_3.swift */,
 				1DE1231C2932CE0F006D1587 /* View_4.swift */,
 			);
-			path = ScrollView;
+			path = Scroll;
 			sourceTree = "<group>";
 		};
 		1DACDD662926560800E283EF /* Read */ = {
@@ -509,6 +523,7 @@
 				1DACDD682926561A00E283EF /* ReadViewController.swift in Sources */,
 				1DE123172932BD83006D1587 /* View_1.swift in Sources */,
 				1D8C6EC6292981C3000BCBE4 /* AnimatedViewController.swift in Sources */,
+				1D56CF5329351D40006798F1 /* DatePicker.swift in Sources */,
 				1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */,
 				1D2999B7292BE0EE00CC5A01 /* ObserveModel.swift in Sources */,
 				1D539F49291AC3D500C85888 /* MoviesTableViewCell.swift in Sources */,
@@ -519,6 +534,7 @@
 				1D45D48A292D49730023F70B /* ComputedModel.swift in Sources */,
 				1DEA7A4B291D821D003D4B98 /* ClousuresViewController.swift in Sources */,
 				1DFC9AA7291FCF29007F4E2F /* AudioBookViewController.swift in Sources */,
+				1D56CF51293512E3006798F1 /* PickerView.swift in Sources */,
 				1D3F073D29267FE7000DC62E /* Book.swift in Sources */,
 				1D539F37291A8F5C00C85888 /* Create.swift in Sources */,
 				1D94D2B7293276EE00339F6E /* Hierarchy.swift in Sources */,
