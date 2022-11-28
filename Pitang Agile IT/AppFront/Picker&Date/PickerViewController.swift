@@ -34,6 +34,15 @@ final class PickerViewController: UIViewController, Setup {
     @objc func datePickerTarget(_ sender: UIDatePicker) {
         textField.text = datePicker.dayMonthYear
     }
+    private func switchInputView() {
+        if datePicker.delegate == nil {
+            pickerView.pickerViewDelegate = nil
+            datePicker.delegate = self
+        } else {
+            datePicker.delegate = nil
+            pickerView.pickerViewDelegate = self
+        }
+    }
 }
 
 extension PickerViewController: PickerViewDelegate, DatePickerDelegate {
@@ -49,6 +58,7 @@ extension PickerViewController: PickerViewDelegate, DatePickerDelegate {
         textField.text = option
     }
     func done() {
+        switchInputView()
         view.endEditing(true)
     }
 }
