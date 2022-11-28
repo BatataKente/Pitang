@@ -29,6 +29,8 @@
 		1D56CF51293512E3006798F1 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56CF50293512E3006798F1 /* PickerView.swift */; };
 		1D56CF5329351D40006798F1 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D56CF5229351D40006798F1 /* DatePicker.swift */; };
 		1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */; };
+		1D64E9B229352BA90017AD9A /* NotSolidTimeLineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64E9B129352BA90017AD9A /* NotSolidTimeLineService.swift */; };
+		1D64E9B429352C330017AD9A /* NotSolidServiceSherduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D64E9B329352C330017AD9A /* NotSolidServiceSherduler.swift */; };
 		1D68D67F2934F53A001ADA47 /* Water.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D68D67E2934F15D001ADA47 /* Water.geojson */; };
 		1D68D6802934F669001ADA47 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DE292BFF6F00FB3830 /* Water.swift */; };
 		1D68D6822934F826001ADA47 /* TestReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68D6812934F826001ADA47 /* TestReader.swift */; };
@@ -44,6 +46,7 @@
 		1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */; };
 		1DADF2DD292BFBC700FB3830 /* WaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DC292BFBC700FB3830 /* WaterTest.swift */; };
 		1DC67FBF2925456A00F3D714 /* ComputedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */; };
+		1DC963EF29353330002BC20D /* LazyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC963EE29353330002BC20D /* LazyViewController.swift */; };
 		1DE060B0292BB590007D7DE4 /* Batatinha.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1DE060AF292BB590007D7DE4 /* Batatinha.rtf */; };
 		1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */; };
 		1DE060B4292BB642007D7DE4 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE060B3292BB642007D7DE4 /* Setup.swift */; };
@@ -93,6 +96,8 @@
 		1D56CF50293512E3006798F1 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		1D56CF5229351D40006798F1 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		1D5CCA4B2927E2F100906EDC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		1D64E9B129352BA90017AD9A /* NotSolidTimeLineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSolidTimeLineService.swift; sourceTree = "<group>"; };
+		1D64E9B329352C330017AD9A /* NotSolidServiceSherduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSolidServiceSherduler.swift; sourceTree = "<group>"; };
 		1D68D67E2934F15D001ADA47 /* Water.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Water.geojson; sourceTree = "<group>"; };
 		1D68D6812934F826001ADA47 /* TestReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReader.swift; sourceTree = "<group>"; };
 		1D875F532926AC7B00169B84 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +114,7 @@
 		1DADF2DC292BFBC700FB3830 /* WaterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterTest.swift; sourceTree = "<group>"; };
 		1DADF2DE292BFF6F00FB3830 /* Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
 		1DC67FBE2925456A00F3D714 /* ComputedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedViewController.swift; sourceTree = "<group>"; };
+		1DC963EE29353330002BC20D /* LazyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyViewController.swift; sourceTree = "<group>"; };
 		1DE060AF292BB590007D7DE4 /* Batatinha.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Batatinha.rtf; sourceTree = "<group>"; };
 		1DE060B1292BB5F1007D7DE4 /* ReadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadModel.swift; sourceTree = "<group>"; };
 		1DE060B3292BB642007D7DE4 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
@@ -219,6 +225,7 @@
 		1D539F34291A8EB000C85888 /* AppFront */ = {
 			isa = PBXGroup;
 			children = (
+				1DC963ED2935331D002BC20D /* Lazy */,
 				1D56CF4F2935122F006798F1 /* Solid */,
 				1D9D0E2B2930220A0063E313 /* Scroll */,
 				1D4FB4B1292E5995003DFA6D /* Picker&Date */,
@@ -284,6 +291,8 @@
 		1D56CF4F2935122F006798F1 /* Solid */ = {
 			isa = PBXGroup;
 			children = (
+				1D64E9B129352BA90017AD9A /* NotSolidTimeLineService.swift */,
+				1D64E9B329352C330017AD9A /* NotSolidServiceSherduler.swift */,
 			);
 			path = Solid;
 			sourceTree = "<group>";
@@ -380,6 +389,14 @@
 				1D2A833D292FEF6F00A0ECB7 /* ComputedView.swift */,
 			);
 			path = Computed;
+			sourceTree = "<group>";
+		};
+		1DC963ED2935331D002BC20D /* Lazy */ = {
+			isa = PBXGroup;
+			children = (
+				1DC963EE29353330002BC20D /* LazyViewController.swift */,
+			);
+			path = Lazy;
 			sourceTree = "<group>";
 		};
 		1DEA7A49291D820C003D4B98 /* Clousures */ = {
@@ -505,6 +522,7 @@
 			files = (
 				1D2999B5292BE0A300CC5A01 /* ObserveViewController.swift in Sources */,
 				1DE1231D2932CE0F006D1587 /* View_4.swift in Sources */,
+				1D64E9B429352C330017AD9A /* NotSolidServiceSherduler.swift in Sources */,
 				1D539F4D291AD88800C85888 /* Player.swift in Sources */,
 				1D539F23291A8E7400C85888 /* MoviesViewController.swift in Sources */,
 				1D9D0E2D293022310063E313 /* ScrollViewController.swift in Sources */,
@@ -512,9 +530,11 @@
 				1D539F3E291A9B9500C85888 /* Assets.swift in Sources */,
 				1DE060B2292BB5F1007D7DE4 /* ReadModel.swift in Sources */,
 				1D539F1F291A8E7400C85888 /* AppDelegate.swift in Sources */,
+				1DC963EF29353330002BC20D /* LazyViewController.swift in Sources */,
 				1D539F40291A9DFF00C85888 /* MovieDetailsViewController.swift in Sources */,
 				1D4FB4B3292E59A5003DFA6D /* PickerViewController.swift in Sources */,
 				1D539F21291A8E7400C85888 /* SceneDelegate.swift in Sources */,
+				1D64E9B229352BA90017AD9A /* NotSolidTimeLineService.swift in Sources */,
 				1DE060B4292BB642007D7DE4 /* Setup.swift in Sources */,
 				1D94D2B5293276C500339F6E /* Background.swift in Sources */,
 				1D5CCA4C2927E2F100906EDC /* UINavigationController.swift in Sources */,
