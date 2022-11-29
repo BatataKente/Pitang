@@ -34,6 +34,7 @@
 		1D68D67F2934F53A001ADA47 /* Water.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D68D67E2934F15D001ADA47 /* Water.geojson */; };
 		1D68D6802934F669001ADA47 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DADF2DE292BFF6F00FB3830 /* Water.swift */; };
 		1D68D6822934F826001ADA47 /* TestReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D68D6812934F826001ADA47 /* TestReader.swift */; };
+		1D6986BB29364EBA0049A71A /* LazyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6986BA29364EBA0049A71A /* LazyTests.swift */; };
 		1D875F542926AC7B00169B84 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F532926AC7B00169B84 /* BookViewController.swift */; };
 		1D875F562926B0F700169B84 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D875F552926B0F700169B84 /* TestViewController.swift */; };
 		1D8C6EC32929806E000BCBE4 /* Jason.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1D8C6EC229297F1C000BCBE4 /* Jason.geojson */; };
@@ -100,6 +101,7 @@
 		1D64E9B329352C330017AD9A /* NotSolidServiceSherduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSolidServiceSherduler.swift; sourceTree = "<group>"; };
 		1D68D67E2934F15D001ADA47 /* Water.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Water.geojson; sourceTree = "<group>"; };
 		1D68D6812934F826001ADA47 /* TestReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestReader.swift; sourceTree = "<group>"; };
+		1D6986BA29364EBA0049A71A /* LazyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyTests.swift; sourceTree = "<group>"; };
 		1D875F532926AC7B00169B84 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		1D875F552926B0F700169B84 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		1D8C6EC229297F1C000BCBE4 /* Jason.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jason.geojson; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			children = (
 				1DADF2D5292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift */,
 				1DADF2DC292BFBC700FB3830 /* WaterTest.swift */,
+				1D6986BA29364EBA0049A71A /* LazyTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 			files = (
 				1DADF2DD292BFBC700FB3830 /* WaterTest.swift in Sources */,
 				1D68D6802934F669001ADA47 /* Water.swift in Sources */,
+				1D6986BB29364EBA0049A71A /* LazyTests.swift in Sources */,
 				1D68D6822934F826001ADA47 /* TestReader.swift in Sources */,
 				1DADF2D6292BFADB00FB3830 /* Pitang_Agile_IT_Tests.swift in Sources */,
 			);

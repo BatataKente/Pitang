@@ -28,6 +28,12 @@ class LazyViewController: UIViewController {
         view.addGradientBackground(colors: [UIColor.systemPurple.cgColor,
                                             UIColor.systemMint.cgColor,
                                             UIColor.systemPink.cgColor])
-        print(josicleison.introduction)
+        print(2.square())
+    }
+}
+
+extension Int {
+    func square() -> Int {
+        return self * self
     }
 }
