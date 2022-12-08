@@ -14,15 +14,15 @@ class View_2: UIView, Setup {
     init(height: CGFloat = 100) {
         super.init(frame: .zero)
         setup()
-        self.height(constant: height)
+        heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func setupView() {
+    func configute() {
         addSubviews([leftImage, label, rightImage])
     }
-    func setupConstraints() {
+    func constrain() {
         leftImage
             .constraint(attributes: [.top, .leading, .bottom])
             .constraint(attribute: .width, multiplier: 1/3)

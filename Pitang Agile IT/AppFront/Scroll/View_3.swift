@@ -25,16 +25,16 @@ class View_3: UIView, Setup {
     init(height: CGFloat = 75,_ texts: [String] = []) {
         super.init(frame: .zero)
         setup()
-        self.height(constant: height)
+        heightAnchor.constraint(equalToConstant: height).isActive = true
         setupCollection(texts)
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func setupView() {
+    func configute() {
         addSubview(collection.view)
     }
-    func setupConstraints() {
+    func constrain() {
         collection.view.constraint(attributes: [.top, .leading, .trailing, .bottom])
     }
     private func setupCollection(_ texts: [String]) {

@@ -7,14 +7,14 @@
 
 import UIKit
 
-extension UIView {
+extension CALayer {
     func addGradientBackground(colors: [CGColor] = [UIColor.systemGreen.cgColor,
                                                     UIColor.systemGreen.cgColor,
                                                     UIColor.green.cgColor]) {
-        removeSubLayers(if: (layer as? CAGradientLayer) != nil)
+        removeSubLayers(ofType: CAGradientLayer.self)
         let gradient = CAGradientLayer()
         gradient.frame = bounds
         gradient.colors = colors
-        layer.insertSublayer(gradient, at: 0)
+        insertSublayer(gradient, at: 0)
     }
 }

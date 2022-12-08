@@ -20,8 +20,9 @@ class ComputedViewController: UIViewController {
         let button = UIButton()
         button.backgroundColor = .red
         view.addSubview(button)
-        button.constraint(attributes: [.centerX,.centerY])
-        button.shape(constant: view.frame.width/4)
+        button.enableAutoLayout
+            .constraint(attributes: [.centerX,.centerY])
+            .constraint(attribute: .height, multiplier: 0.25)
         let customView = UIView(frame: CGRect(origin: CGPoint(x: view.frame.minX,
                                                               y: view.frame.maxY-view.frame.height*0.3),
                                               size: CGSize(width: view.frame.width,

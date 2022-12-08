@@ -25,9 +25,9 @@ class LazyViewController: UIViewController {
     var josicleison = Player(name: "Josicleison Elves", team: "Cavalos", position: "Atirador")
     override func loadView() {
         super.loadView()
-        view.addGradientBackground(colors: [UIColor.systemPurple.cgColor,
-                                            UIColor.systemMint.cgColor,
-                                            UIColor.systemPink.cgColor])
+        view.layer.addGradientBackground(colors: [UIColor.systemPurple.cgColor,
+                                                  UIColor.systemMint.cgColor,
+                                                  UIColor.systemPink.cgColor])
         print(2.square())
     }
 }

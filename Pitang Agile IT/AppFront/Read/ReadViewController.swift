@@ -66,12 +66,12 @@ class ReadViewController: UIViewController {
 }
 
 extension ReadViewController: Setup {
-    func setupView() {
+    func configute() {
         title = "\(type(of: self))"
         view.backgroundColor = Assets.Colors.normalDark
         view.addSubviews([label, textView, stack])
     }
-    func setupConstraints() {
+    func constrain() {
         label.constraint(attributes: [.leading, .trailing, .top], to: view.safeAreaLayoutGuide)
         textView.constraint(attributesAttributes: [.top: .bottom], to: label)
         textView.constraint(attributes: [.leading, .trailing], to: view.safeAreaLayoutGuide)

@@ -30,12 +30,12 @@ final class ScrollViewController: UIViewController, Setup {
         title = "\(type(of: self))"
         setup()
     }
-    func setupView() {
+    func configute() {
         scrollView.delegate = self
         view.backgroundColor = .systemPurple
         view.addSubview(scrollView)
     }
-    func setupConstraints() {
+    func constrain() {
         [
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),

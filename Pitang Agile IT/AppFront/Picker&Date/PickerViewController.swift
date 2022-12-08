@@ -18,14 +18,14 @@ final class PickerViewController: UIViewController, Setup {
         setup()
     }
 // MARK: - setup
-    func setupView() {
+    func configute() {
 //        pickerView.pickerViewDelegate = self
         datePicker.delegate = self
         datePicker.addTarget(self, action: #selector(datePickerTarget), for: .valueChanged)
         view.backgroundColor = .systemPurple
         view.addSubview(textField)
     }
-    func setupConstraints() {
+    func constrain() {
         textField.constraint(attributesConstants: [.leading: view.frame.width*0.2,
                                                    .trailing: -view.frame.width*0.2,
                                                    .centerY: 0])

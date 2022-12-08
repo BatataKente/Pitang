@@ -25,15 +25,15 @@ class View_4: UIView, Setup {
     init(height: CGFloat = 300) {
         super.init(frame: .zero)
         setup()
-        self.height(constant: height)
+        heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func setupView() {
+    func configute() {
         addSubview(collection.view)
     }
-    func setupConstraints() {
+    func constrain() {
         collection.view.constraint(attributes: [.top, .leading, .trailing, .bottom])
     }
 }

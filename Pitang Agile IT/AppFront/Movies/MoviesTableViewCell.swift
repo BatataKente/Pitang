@@ -50,16 +50,17 @@ class MoviesTableViewCell: UITableViewCell {
             }
         }
         
-        label.constraint(attributesConstants: [.top: 0, .bottom: 0,
-                                               .leading: contentView.frame.height*1.2,
-                                               .trailing: -contentView.frame.height*1.2])
+        label.enableAutoLayout
+            .constraint(attributesConstants: [.top: 0, .bottom: 0,
+                                              .leading: contentView.frame.height*1.2,
+                                              .trailing: -contentView.frame.height*1.2])
         
-        arrowImageView
+        arrowImageView.enableAutoLayout
             .constraint(attributesConstants: [.centerY: 0, .trailing: -20])
-            .shape(constant: contentView.frame.height*0.3)
+            .constraint(attribute: .height, multiplier: 0.3)
         
-        line
+        line.enableAutoLayout
             .constraint(attributesConstants: [.leading: 10, .trailing: -10, .bottom: 0])
-            .height(constant: 2)
+            .heightAnchor.constraint(equalToConstant: 3).isActive = true
     }
 }

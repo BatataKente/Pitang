@@ -34,20 +34,20 @@ class MovieDetailsViewController: UIViewController {
         title = "\(type(of: self))"
         view.backgroundColor = .systemPurple
         view.addSubviews([movieImageView, movieTitleLabel, movieDescriptionLabel, playButton])
-        movieImageView
+        movieImageView.enableAutoLayout
             .constraint(attributes: [.top,.leading,.trailing])
-            .shape(constant: view.frame.height*0.3)
-        movieTitleLabel
+            .constraint(attribute: .height, multiplier: 0.3)
+        movieTitleLabel.enableAutoLayout
             .constraint(attributesAttributes: [.top: .bottom],
                         to: movieImageView, constant: 20)
             .constraint(attributesConstants: [.leading: 0, .trailing: 0],
                         to: view.safeAreaLayoutGuide)
-        movieDescriptionLabel
+        movieDescriptionLabel.enableAutoLayout
             .constraint(attributesAttributes: [.top: .bottom],
                         to: movieTitleLabel, constant: view.frame.height*0.05)
             .constraint(attributesConstants: [.leading: 40, .trailing: -40],
                         to: view.safeAreaLayoutGuide)
-        playButton
+        playButton.enableAutoLayout
             .constraint(attributes: [.centerX, .bottom],
                         to: view.safeAreaLayoutGuide)
         Task {
